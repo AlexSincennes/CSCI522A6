@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Characters">
+      <UniqueIdentifier>{FE4D98A5-F199-BB41-8373-381D8EA2BE4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{574C5B48-D4DD-8247-A7A0-C2B0C3C8C946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{4F568A2F-2AE1-BB47-A1C8-E9BC9C186CEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tank">
+      <UniqueIdentifier>{B912440E-8781-E34C-A4CB-1783565604C3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharacterControlContext.h" />
+    <ClInclude Include="ClientCharacterControlGame.h" />
+    <ClInclude Include="ClientGameObjectManagerAddon.h" />
+    <ClInclude Include="GameObjectMangerAddon.h" />
+    <ClInclude Include="GlobalRegistry.h" />
+    <ClInclude Include="ServerCharacterControlGame.h" />
+    <ClInclude Include="ServerGameObjectManagerAddon.h" />
+    <ClInclude Include="test.h" />
+    <ClInclude Include="testfunc_c_stdcall.h" />
+    <ClInclude Include="WayPoint.h" />
+    <ClInclude Include="Characters\Flyer.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters\SoldierNPC.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters\SoldierNPCAnimationSM.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters\SoldierNPCBehaviorSM.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters\SoldierNPCMovementSM.h">
+      <Filter>Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientSpaceShip.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\ClientSpaceShipControls.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Events.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank\ClientTank.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientCharacterControlGame.cpp" />
+    <ClCompile Include="ClientGameObjectManagerAddon.cpp" />
+    <ClCompile Include="GameObjectManagerAddon.cpp" />
+    <ClCompile Include="GlobalRegistry.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ServerCharacterControlGame.cpp" />
+    <ClCompile Include="ServerGameObjectManagerAddon.cpp" />
+    <ClCompile Include="WayPoint.cpp" />
+    <ClCompile Include="Characters\Flyer.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters\SoldierNPC.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters\SoldierNPCAnimationSM.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters\SoldierNPCBehaviorSM.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters\SoldierNPCMovementSM.cpp">
+      <Filter>Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientSpaceShip.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\ClientSpaceShipControls.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Events.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank\ClientTank.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="test.asm" />
+    <MASM Include="testfunc_c_stdcall.asm" />
+  </ItemGroup>
+</Project>

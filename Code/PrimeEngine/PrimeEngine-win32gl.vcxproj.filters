@@ -1,0 +1,3101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="APIAbstraction">
+      <UniqueIdentifier>{A78EB841-ABCD-D04A-BB23-8D7ADDC85B11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX11">
+      <UniqueIdentifier>{EB763BA9-8BFA-704A-9B7C-532A895DA4C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX11\D3D11_GPUBuffers">
+      <UniqueIdentifier>{5A4D6F50-18C3-4249-B99C-76F432D9D142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX9">
+      <UniqueIdentifier>{39F2A033-2F40-F94F-A4D1-FB1326CDCBD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX9\D3D9_GPUBuffers">
+      <UniqueIdentifier>{5DCF837A-4686-DF47-A6CE-8928B8320732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX9\DX9_KeyboardMouse">
+      <UniqueIdentifier>{99D9730D-9E98-9040-8054-11DE87B086D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\DirectX9\DX9_XInput">
+      <UniqueIdentifier>{B4302754-6803-334C-9171-8CC457E60340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\Effect">
+      <UniqueIdentifier>{131FF929-5FBE-804B-9506-A1315DEFAD6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\GPUBuffers">
+      <UniqueIdentifier>{A8DFB374-A363-414A-873B-E0ED6CD5197D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\GPUMaterial">
+      <UniqueIdentifier>{F3D9E4A7-C129-D641-97E6-342C8595F48E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\Input">
+      <UniqueIdentifier>{369B4162-0FAE-4641-9CE3-E9E134798644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\OGL">
+      <UniqueIdentifier>{833E42FF-8B14-564D-8FC0-C229D52340E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\OGL\OGL_GPUBuffers">
+      <UniqueIdentifier>{CEA000C3-55BB-2B43-ABE0-9C911327C950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\Texture">
+      <UniqueIdentifier>{C4DFD0EC-BCBF-D14E-8428-03EF99B0C870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\Threading">
+      <UniqueIdentifier>{166E7379-483F-CF4E-AC37-45FAFB25386D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="APIAbstraction\Timer">
+      <UniqueIdentifier>{8B449E4C-7D20-684B-9073-607580571022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{96AA51BB-5C67-B34B-90A2-9748E64C5D8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{52B1A159-9E1B-2B43-88BC-47D57A81E4CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem">
+      <UniqueIdentifier>{AE498DE0-0E4A-9441-988A-04755223CBDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{9B5917F0-9E9D-7E40-AFE7-84FA59D51D79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Client">
+      <UniqueIdentifier>{24235B93-4855-0342-AB49-A1B30DA7E0D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common">
+      <UniqueIdentifier>{F8DC3110-2FC2-E149-99D0-9C682B8E9A08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Server">
+      <UniqueIdentifier>{E0AA39D8-0943-0D44-82C3-6BB62965B4C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjectModel">
+      <UniqueIdentifier>{9D3BDBA7-AF44-3E4C-9311-A091A1FDB470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjectModel\DefaultGameControls">
+      <UniqueIdentifier>{906594AD-C370-1144-9FD7-80D59E24855A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{5CF0B73C-4C3B-7C41-9C26-23B75957734E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\IndexBufferCPU">
+      <UniqueIdentifier>{2E1BD0E5-8FC5-DA4E-896F-CA4D1D097CFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\MaterialCPU">
+      <UniqueIdentifier>{C7D5601D-5AFB-E341-A4D6-70304C1479D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\MeshCPU">
+      <UniqueIdentifier>{51B6FA2E-B672-8C45-B8B2-B875372DB592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\NormalBufferCPU">
+      <UniqueIdentifier>{08FD5FD9-9CB5-BB40-820C-956B076080FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\ParticleSystemCPU">
+      <UniqueIdentifier>{AD617DFD-E241-1744-A34B-687FFDB28E75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\PositionBufferCPU">
+      <UniqueIdentifier>{07FF359A-2998-AD47-A99E-EC3A0D9437DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\SkeletonCPU">
+      <UniqueIdentifier>{AA877229-0BBD-9A44-917D-71A076C91B4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\TangentBufferCPU">
+      <UniqueIdentifier>{E68C58B4-2133-6249-8CDE-11857982FAC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\TexCoordBufferCPU">
+      <UniqueIdentifier>{97152E95-2948-564E-8B21-710BC6143F4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{460F0AAD-BDF1-6445-90CE-627A78D56EC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{BA6EC3F9-8786-8741-95CB-DBDD1F509671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\Client">
+      <UniqueIdentifier>{4E377E69-D501-5D4C-B66F-44C3F9944D42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\EventGlue">
+      <UniqueIdentifier>{1015BA9C-A9BF-BF49-8926-97F974624455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\Server">
+      <UniqueIdentifier>{3D2DE6EF-FCFB-CA4D-8555-3072A31FE900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainFunction">
+      <UniqueIdentifier>{DAF6F1EA-57DE-1649-9FDE-8749C8542F23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{4B8893DD-D279-2546-BFEF-28F2CDAAA2D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryManagement">
+      <UniqueIdentifier>{7D8D3648-1E9C-7344-9E81-77AA261C4E23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking">
+      <UniqueIdentifier>{D6623C93-7D67-FE4F-8886-9C50D3A1B91C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking\Client">
+      <UniqueIdentifier>{012CC948-AAA5-6F4B-A7A6-FEBE05229D63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking\Server">
+      <UniqueIdentifier>{C83B6AAB-255F-6D49-9659-8192E6A47EA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PrimitiveTypes">
+      <UniqueIdentifier>{436D171A-14C4-F941-83D1-A19C818438E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiling">
+      <UniqueIdentifier>{189368FC-DF32-0549-92BF-67C9B4B3FE36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{DD78F6C4-AC26-C847-B5E5-DA870B04BCC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\ShaderActions">
+      <UniqueIdentifier>{72869960-8129-7846-B77A-A394E941E3E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{1B057196-D618-0D4E-905D-4EED944B55C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{0127B3F9-6051-484C-9BEB-A90882223CE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{5FFE62B0-997F-D446-B6B3-4ABFA75E6641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Array">
+      <UniqueIdentifier>{F72872FD-C514-0741-ACF8-AE2658DEFE1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut">
+      <UniqueIdentifier>{B837D444-26C2-BF41-A84A-FF067C32BDD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\A4">
+      <UniqueIdentifier>{1A5E63CB-58FA-4E49-A512-507F51CCDC8A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\A4\Levels">
+      <UniqueIdentifier>{FA2E44A5-1776-8C4E-B39F-A0CA3529DF05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Basic">
+      <UniqueIdentifier>{441C9F81-430D-0143-92CD-94B4CF3CCDB1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Basic\Levels">
+      <UniqueIdentifier>{1804A5F0-CB5B-4148-BD8E-9EF78C03879C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl">
+      <UniqueIdentifier>{B77FE2C5-BF6D-F941-9569-EC7B3EB66454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\AnimationNameSets">
+      <UniqueIdentifier>{34A1948B-DCF1-3649-A981-C9547C762FDF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\AnimationSets">
+      <UniqueIdentifier>{DADD3116-0529-C942-A8C4-752700F3EBD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\AnimationSpeedSets">
+      <UniqueIdentifier>{5C37366E-7949-004F-BC52-333340D59BA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\GameObjectMetaScripts">
+      <UniqueIdentifier>{76EDE6C7-1445-1B4C-8A97-021AB7F53298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\IndexBuffers">
+      <UniqueIdentifier>{49676335-5289-184E-9A5A-C76A979248B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\Levels">
+      <UniqueIdentifier>{C93A1CF8-DCFD-8046-9170-1CF85CD841DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\Materials">
+      <UniqueIdentifier>{CB11BB96-3DC9-FF48-B92C-78ACAE70718F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\MaterialSets">
+      <UniqueIdentifier>{CE0D4AF3-F9B6-D544-A3DC-ACA8B197A281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\Meshes">
+      <UniqueIdentifier>{40924D94-B62F-4846-9550-5333D23AAAC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\NormalBuffers">
+      <UniqueIdentifier>{1387E157-43DA-0143-9F69-1B0ED4955711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\PositionBuffers">
+      <UniqueIdentifier>{3149B9EF-15A8-794E-822E-66945075AD64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\Scripts">
+      <UniqueIdentifier>{D4E172ED-90E2-B647-98E6-DF5414431956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\TangentBuffers">
+      <UniqueIdentifier>{0DD849A0-6D8D-F843-9225-09B710E81229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\TexCoordBuffers">
+      <UniqueIdentifier>{F4A8636A-9B1E-444C-8374-37B4AF9A4BE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\CharacterControl\Textures">
+      <UniqueIdentifier>{CC1091DA-07D4-334B-83DA-0D2557CC2EBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City">
+      <UniqueIdentifier>{0294DD04-C846-704F-BF8B-E88E0C82B5A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\AnimationNameSets">
+      <UniqueIdentifier>{1E859E9D-5A62-C04E-8EA0-6637FE294B35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\AnimationSets">
+      <UniqueIdentifier>{597707AC-FEF0-6244-B758-79DEBA7DEA98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\AnimationSpeedSets">
+      <UniqueIdentifier>{4DA6076B-C7BF-5844-A6D7-91C8EC1FA7C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\GameObjectMetaScripts">
+      <UniqueIdentifier>{E0F36E46-DB00-B948-9B71-282EB4ACF7BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\IndexBuffers">
+      <UniqueIdentifier>{76459E65-2554-6748-B232-F309D96B9511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\Materials">
+      <UniqueIdentifier>{6034BFE8-ED91-9345-849B-A89D8448856A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\MaterialSets">
+      <UniqueIdentifier>{FFC35726-4062-D44E-BF2C-27C58912E541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\Meshes">
+      <UniqueIdentifier>{F7489C59-D747-6946-A7C7-5C775058E985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\NormalBuffers">
+      <UniqueIdentifier>{06A96F48-33A5-7E46-B025-74D2153D737B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\PositionBuffers">
+      <UniqueIdentifier>{8F9B1A50-7ABB-4443-8825-F67B4B9A581F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\Skeletons">
+      <UniqueIdentifier>{A49707D7-8BBB-2141-B4E9-54D98205B5CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\Skins">
+      <UniqueIdentifier>{1D010713-0BAE-AA48-AE04-DF848ED25A33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\SkinWeights">
+      <UniqueIdentifier>{EA9B66FF-FBF4-EF4D-AEEA-6CCD0E3486CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\TangentBuffers">
+      <UniqueIdentifier>{B861B3B1-3A3F-784C-95A6-52BD2FB9519E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\TexCoordBuffers">
+      <UniqueIdentifier>{6F763BD9-CFAE-DB44-AC2F-84D9C85199F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\City\Textures">
+      <UniqueIdentifier>{3D628899-B85B-0B41-830A-18ACF8FDB57B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis">
+      <UniqueIdentifier>{95A69265-5A9A-4E41-9999-5994542A5DAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\IndexBuffers">
+      <UniqueIdentifier>{B830F097-B28E-B442-9120-6913AB7B3DCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\Materials">
+      <UniqueIdentifier>{81261D85-525D-2E4C-906E-3B42A8913E67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\MaterialSets">
+      <UniqueIdentifier>{9A3FA264-72AC-E64E-9413-97E7C75570E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\Meshes">
+      <UniqueIdentifier>{6EA54E4D-B72E-CC42-A98B-9A85A30CF108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\NormalBuffers">
+      <UniqueIdentifier>{0D6935C7-A63B-D04C-B583-0719A9D43277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\PositionBuffers">
+      <UniqueIdentifier>{A43C25C5-250B-9C46-81A1-1BF7ACF939B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\TangentBuffers">
+      <UniqueIdentifier>{1110BC25-0A8D-0143-A8A6-F06880828556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\TexCoordBuffers">
+      <UniqueIdentifier>{D0C7D3D5-7756-544F-9AA4-CDE2BB9BDF69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\Textures">
+      <UniqueIdentifier>{BAC8BD3E-4FA5-4548-9AF0-95B0936E9906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\DebugAxis\VertexBuffers">
+      <UniqueIdentifier>{752307E5-4CBF-FA4E-B14C-890A6D5B72BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default">
+      <UniqueIdentifier>{7E250B5E-E6DC-EB45-8C65-3FF0EAA9AA6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\AnimationNameSets">
+      <UniqueIdentifier>{4F7D6F9C-94B7-8E45-9780-35AC653F3A3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\AnimationSets">
+      <UniqueIdentifier>{2C570C0D-EA5F-B744-88F2-664F7A7FBC98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\AnimationSpeedSets">
+      <UniqueIdentifier>{84E9E42A-C51A-BE44-B128-4ED900247648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\GameObjectMetaScripts">
+      <UniqueIdentifier>{1604D928-F037-F94B-86F7-9CFD0BDF7468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\GPUPrograms">
+      <UniqueIdentifier>{06B5F461-5826-E441-9277-7012183B9268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\IndexBuffers">
+      <UniqueIdentifier>{348CE04C-F479-AF41-B34B-43B1D924B066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Materials">
+      <UniqueIdentifier>{3CD04968-F9FC-004E-8059-33A2C157730D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\MaterialSets">
+      <UniqueIdentifier>{82B7F5D4-2E23-5146-879C-948383FE91C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Meshes">
+      <UniqueIdentifier>{03365497-045D-CA45-9999-E8A034ACF156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\NormalBuffers">
+      <UniqueIdentifier>{527AB113-F1C2-5B42-8E42-243B4BEAE991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\PositionBuffers">
+      <UniqueIdentifier>{119DA0CC-8BF5-964A-B5AE-519A810EC504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Scripts">
+      <UniqueIdentifier>{C28A851C-E896-5646-99F3-BA93023B4E83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Skeletons">
+      <UniqueIdentifier>{09DBC23B-4071-564D-84D8-C94AEA51E07D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Skins">
+      <UniqueIdentifier>{4C1264B4-A645-2244-B91C-7DC6EC8B7941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\SkinWeights">
+      <UniqueIdentifier>{B36E21D6-C43E-F544-9A90-74BFBEE9E5C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\TangentBuffers">
+      <UniqueIdentifier>{8BE57416-0CE6-374E-AC17-FCA45ABB988B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\TexCoordBuffers">
+      <UniqueIdentifier>{05EC65C9-C4E3-0049-98F3-C6AB037F683B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Default\Textures">
+      <UniqueIdentifier>{CC2165DE-F8E7-F34D-9366-0156895CFCD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate">
+      <UniqueIdentifier>{3B2811C1-817B-394E-942D-3CCE6257B0A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\IndexBuffers">
+      <UniqueIdentifier>{58F1FC09-638D-9F48-B42E-D1DF944E23A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\Materials">
+      <UniqueIdentifier>{0EAF329F-8A48-4B4C-ADE8-8491B4ED2311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\MaterialSets">
+      <UniqueIdentifier>{AC62BDAF-71B9-FD45-8C52-F9515098661B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\Meshes">
+      <UniqueIdentifier>{D9055C2C-21E7-CA46-AE67-188D4CC55EA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\NormalBuffers">
+      <UniqueIdentifier>{EC78E236-0C14-5F44-BAA7-2B70CD1AD4AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\PositionBuffers">
+      <UniqueIdentifier>{C71EAAB1-8A63-E14B-8F56-566BF9FE31F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\TangentBuffers">
+      <UniqueIdentifier>{D1048869-9312-444F-8C64-A0EA41CF31B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\TexCoordBuffers">
+      <UniqueIdentifier>{9DA11940-6A2C-204F-853C-C7DBD55EB331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Frigate\Textures">
+      <UniqueIdentifier>{4202D0C7-1F4F-8E46-BF8E-C722B2AB9314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE">
+      <UniqueIdentifier>{A9ED3ADF-FEC4-CA48-A325-C769B903185C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\IndexBuffers">
+      <UniqueIdentifier>{BAF97785-F523-7041-A7DD-E9FE3F9C734B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\Materials">
+      <UniqueIdentifier>{271BF3A4-DBBA-0A45-AE13-9C9E30373EFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\MaterialSets">
+      <UniqueIdentifier>{5A26B388-E100-2D4F-9126-C8D87C9D55CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\Meshes">
+      <UniqueIdentifier>{9CEEA125-9CA4-F344-AC91-8AD87E7B96C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\NormalBuffers">
+      <UniqueIdentifier>{FC28D095-E7CC-1A48-A6D1-DC20AE53FE54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\TangentBuffers">
+      <UniqueIdentifier>{EEF18B75-ADBB-AA4B-BE87-F3FFBD6AC01B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\TexCoordBuffers">
+      <UniqueIdentifier>{B232C8A5-5F18-E845-A0AC-BFA7F3D40E70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\Textures">
+      <UniqueIdentifier>{C6B25D1E-A5A6-804B-AFBE-4A472A131012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\PE\VertexBuffers">
+      <UniqueIdentifier>{52B01CB9-1E6F-B545-B031-22366F37AA47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier">
+      <UniqueIdentifier>{5E134008-21B8-914C-95B6-D0DD8E2AC12B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\AnimationSets">
+      <UniqueIdentifier>{20E89C34-AF3D-3B48-AD83-E107E5ED3F48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\IndexBuffers">
+      <UniqueIdentifier>{28341184-2512-8540-9863-39D2DD541A24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\Materials">
+      <UniqueIdentifier>{2DF1691E-136B-7C4E-97F8-FBFA582AE515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\MaterialSets">
+      <UniqueIdentifier>{FCCDD029-3829-7344-B966-7550CF370867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\Meshes">
+      <UniqueIdentifier>{BCF6107F-3381-114B-A3F3-07C0887AEE58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\NormalBuffers">
+      <UniqueIdentifier>{4B303D8A-BFC2-5744-8F4B-009E29552142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\PositionBuffers">
+      <UniqueIdentifier>{17CD7DF4-A046-ED43-8008-51309B78E832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\Skeletons">
+      <UniqueIdentifier>{FF4FAFAB-D6DC-AE44-A5FA-9B7E502DBC33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\SkinWeights">
+      <UniqueIdentifier>{60D881F5-5B05-7945-A8C1-C607601B6864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\TangentBuffers">
+      <UniqueIdentifier>{1D1CA33F-E6AD-8547-98D4-B7A7B6BF4F61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\TexCoordBuffers">
+      <UniqueIdentifier>{6BA7B231-B10B-5F40-AB55-29051AE30950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Soldier\Textures">
+      <UniqueIdentifier>{04387A82-8AF7-FC41-B08F-3C262AA063B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire">
+      <UniqueIdentifier>{70378FFE-FDFA-FA4D-8220-EDAFC98732B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\AnimationSets">
+      <UniqueIdentifier>{207BE1E2-4A28-2042-BEC8-34362FB6A1F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\IndexBuffers">
+      <UniqueIdentifier>{B734A2A7-BAA9-3B44-BD26-7538F882F731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\Materials">
+      <UniqueIdentifier>{E9714F84-7BA9-0A4C-8A53-E9B4E947E417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\MaterialSets">
+      <UniqueIdentifier>{8E925E6A-B4CE-0E42-B988-52A70AE85AE4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\Meshes">
+      <UniqueIdentifier>{81E2DFA4-D9D6-094E-BD8C-5D7AA4FD1D88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\NormalBuffers">
+      <UniqueIdentifier>{9E8CD5C0-0851-7A41-BE7A-635155684AF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\PositionBuffers">
+      <UniqueIdentifier>{E119505F-7642-034E-A8D3-C49B0DD0259C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\Skeletons">
+      <UniqueIdentifier>{B94FCD59-E269-9349-B070-8A471330AF98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\SkinWeights">
+      <UniqueIdentifier>{CBE2A41F-7399-D440-95DD-4A681FFC0E73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\TangentBuffers">
+      <UniqueIdentifier>{F4489197-4A19-5B4B-88A3-9839CBFCC41E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\TexCoordBuffers">
+      <UniqueIdentifier>{5066D5F3-6636-D34A-BD81-BD72535E8118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\Vampire\Textures">
+      <UniqueIdentifier>{2DC5D98B-34CE-6343-83B1-27FEF6721DB3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="premake4-primeengine.lua" />
+    <None Include="APIAbstraction\Effect\Effect.lua">
+      <Filter>APIAbstraction\Effect</Filter>
+    </None>
+    <None Include="Events\Component.lua">
+      <Filter>Events</Filter>
+    </None>
+    <None Include="Lua\CommandServer.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\HierarchyBuilder.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\int32.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\LevelLoader.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\LuaEnvironment.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\LuahParser.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\MaterialLoader.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\peuuid.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Lua\ServerLuaEnvironment.lua">
+      <Filter>Lua</Filter>
+    </None>
+    <None Include="Scene\Skeleton.lua">
+      <Filter>Scene</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_level.levela">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject0_pPlane.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject1_nazi_r.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject2_nazi_r.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject3_tArrow.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject4_tArrow.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject6_pCar.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject7_tArrow.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\A4\Levels\a4_level.x_PEObject8_polySu.lua">
+      <Filter>AssetsOut\A4\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\basic.x_level.levela">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\basic.x_PEObject0_polySu.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\char_highlight.x_level.levela">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\char_highlight.x_PEObject0_pPlane.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\char_highlight.x_PEObject1_TspotR.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\char_highlight.x_PEObject2_polySu.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\char_highlight.x_polySurface1.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_level.levela">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject0_pkingT.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject10_trans.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject15_trans.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject16_trans.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject17_trans.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject18_trans.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject19_pPlan.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject20_pPlan.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject21_pCar.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject23_pBrok.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject28_TImro.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject2_pPlane.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject30_TImro.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject35_polyS.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject36_Tspot.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject38_nazi_.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject3_pPlane.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject40_nazi_.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject41_nazi_.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject4_pkingT.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject8_pBrick.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Basic\Levels\lightingtest.x_PEObject9_pBrick.lua">
+      <Filter>AssetsOut\Basic\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationNameSets\m98.x.nset">
+      <Filter>AssetsOut\CharacterControl\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationNameSets\mg34.x.nset">
+      <Filter>AssetsOut\CharacterControl\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationNameSets\mp40.x.nset">
+      <Filter>AssetsOut\CharacterControl\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSets\m98.x_animation_set.animseta">
+      <Filter>AssetsOut\CharacterControl\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSets\mg34.x_animation_set.animseta">
+      <Filter>AssetsOut\CharacterControl\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSets\mp40.x_animation_set.animseta">
+      <Filter>AssetsOut\CharacterControl\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSpeedSets\m98.x.sset">
+      <Filter>AssetsOut\CharacterControl\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSpeedSets\mg34.x.sset">
+      <Filter>AssetsOut\CharacterControl\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\AnimationSpeedSets\mp40.x.sset">
+      <Filter>AssetsOut\CharacterControl\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\GameObjectMetaScripts\NPCSoldierGuard.py">
+      <Filter>AssetsOut\CharacterControl\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\GameObjectMetaScripts\WayPoint.py">
+      <Filter>AssetsOut\CharacterControl\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\IndexBuffers\m98.x_m98main_ib.bufa">
+      <Filter>AssetsOut\CharacterControl\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\IndexBuffers\mg34.x_mg34main_ib.bufa">
+      <Filter>AssetsOut\CharacterControl\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\IndexBuffers\mp40.x_mp40main_ib.bufa">
+      <Filter>AssetsOut\CharacterControl\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_level.levela">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject11_polyS.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject12_pPlan.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject15_tArro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject16_tArro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject17_pCar.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject19_tArro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject20_tArro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject21_tArro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject23_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject24_pPlan.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject25_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject26_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject27_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject28_pPlan.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject29_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject30_pPlan.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject31_trans.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject32_TImro.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject33_Tstre.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject42_Tspot.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject45_nazi_.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject46_nazi_.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject6_Tstree.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Levels\ccontrollvl0.x_PEObject8_TspotR.lua">
+      <Filter>AssetsOut\CharacterControl\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Materials\m98.x_m98mat_m.mata">
+      <Filter>AssetsOut\CharacterControl\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Materials\mg34.x_mg34mat_m.mata">
+      <Filter>AssetsOut\CharacterControl\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Materials\mp40.x_mp40mat_m.mata">
+      <Filter>AssetsOut\CharacterControl\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\MaterialSets\m98.x_m98main_ms.mseta">
+      <Filter>AssetsOut\CharacterControl\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\MaterialSets\mg34.x_mg34main_ms.mseta">
+      <Filter>AssetsOut\CharacterControl\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\MaterialSets\mp40.x_mp40main_ms.mseta">
+      <Filter>AssetsOut\CharacterControl\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Meshes\m98.x_m98main_mesh.mesha">
+      <Filter>AssetsOut\CharacterControl\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Meshes\mg34.x_mg34main_mesh.mesha">
+      <Filter>AssetsOut\CharacterControl\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Meshes\mp40.x_mp40main_mesh.mesha">
+      <Filter>AssetsOut\CharacterControl\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\NormalBuffers\m98.x_m98main_nb.bufa">
+      <Filter>AssetsOut\CharacterControl\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\NormalBuffers\mg34.x_mg34main_nb.bufa">
+      <Filter>AssetsOut\CharacterControl\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\NormalBuffers\mp40.x_mp40main_nb.bufa">
+      <Filter>AssetsOut\CharacterControl\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\PositionBuffers\m98.x_m98main_vb.bufa">
+      <Filter>AssetsOut\CharacterControl\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\PositionBuffers\mg34.x_mg34main_vb.bufa">
+      <Filter>AssetsOut\CharacterControl\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\PositionBuffers\mp40.x_mp40main_vb.bufa">
+      <Filter>AssetsOut\CharacterControl\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Scripts\SoldierNPC.lua">
+      <Filter>AssetsOut\CharacterControl\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Scripts\WayPoint.lua">
+      <Filter>AssetsOut\CharacterControl\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TangentBuffers\m98.x_m98main_tb.bufa">
+      <Filter>AssetsOut\CharacterControl\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TangentBuffers\mg34.x_mg34main_tb.bufa">
+      <Filter>AssetsOut\CharacterControl\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TangentBuffers\mp40.x_mp40main_tb.bufa">
+      <Filter>AssetsOut\CharacterControl\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TexCoordBuffers\m98.x_m98main_tcb.bufa">
+      <Filter>AssetsOut\CharacterControl\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TexCoordBuffers\mg34.x_mg34main_tcb.bufa">
+      <Filter>AssetsOut\CharacterControl\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\TexCoordBuffers\mp40.x_mp40main_tcb.bufa">
+      <Filter>AssetsOut\CharacterControl\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Textures\m98.dds">
+      <Filter>AssetsOut\CharacterControl\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Textures\mg34t.dds">
+      <Filter>AssetsOut\CharacterControl\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\CharacterControl\Textures\mp40.dds">
+      <Filter>AssetsOut\CharacterControl\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationNameSets\brickspire.x.nset">
+      <Filter>AssetsOut\City\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationNameSets\streetlight.x.nset">
+      <Filter>AssetsOut\City\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationNameSets\wings.x.nset">
+      <Filter>AssetsOut\City\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSets\brickspire.x_animation_set.animseta">
+      <Filter>AssetsOut\City\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSets\soldier_Soldier_Skeleton.animseta">
+      <Filter>AssetsOut\City\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSets\streetlight.x_animation_set.animseta">
+      <Filter>AssetsOut\City\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSets\wings.x_animation_set.animseta">
+      <Filter>AssetsOut\City\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSpeedSets\brickspire.x.sset">
+      <Filter>AssetsOut\City\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSpeedSets\streetlight.x.sset">
+      <Filter>AssetsOut\City\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\AnimationSpeedSets\wings.x.sset">
+      <Filter>AssetsOut\City\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\GameObjectMetaScripts\SMBrickSpire.py">
+      <Filter>AssetsOut\City\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\GameObjectMetaScripts\SMStreetLight.py">
+      <Filter>AssetsOut\City\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\IndexBuffers\brickspire.x_main_ib.bufa">
+      <Filter>AssetsOut\City\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\IndexBuffers\SoldierTransform_index.bufa">
+      <Filter>AssetsOut\City\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\IndexBuffers\streetlight.x_main_ib.bufa">
+      <Filter>AssetsOut\City\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\IndexBuffers\wings.x_lwing_ib.bufa">
+      <Filter>AssetsOut\City\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\IndexBuffers\wings.x_rwing_ib.bufa">
+      <Filter>AssetsOut\City\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_lambert1_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_1009_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_1011_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_1019_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_151_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_1_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_33_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_37_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_383_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_39_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_3_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_457_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_59_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_667_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_69_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_777_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_81_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_87_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_931_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_961_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_985_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_987_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_993_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_997_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_999_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\brickspire.x_material_town1_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\SoldierTransform_SS_Normal_Texture.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\streetlight.x_material_903_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Materials\wings.x_gaurdian_skin1_m.mata">
+      <Filter>AssetsOut\City\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\MaterialSets\brickspire.x_main_ms.mseta">
+      <Filter>AssetsOut\City\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\MaterialSets\SoldierTransform.mseta">
+      <Filter>AssetsOut\City\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\MaterialSets\streetlight.x_main_ms.mseta">
+      <Filter>AssetsOut\City\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\MaterialSets\wings.x_lwing_ms.mseta">
+      <Filter>AssetsOut\City\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\MaterialSets\wings.x_rwing_ms.mseta">
+      <Filter>AssetsOut\City\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Meshes\brickspire.x_main_mesh.mesha">
+      <Filter>AssetsOut\City\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Meshes\SoldierTransform.mesha">
+      <Filter>AssetsOut\City\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Meshes\streetlight.x_main_mesh.mesha">
+      <Filter>AssetsOut\City\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Meshes\wings.x_lwing_mesh.mesha">
+      <Filter>AssetsOut\City\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Meshes\wings.x_rwing_mesh.mesha">
+      <Filter>AssetsOut\City\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\NormalBuffers\brickspire.x_main_nb.bufa">
+      <Filter>AssetsOut\City\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\NormalBuffers\SoldierTransform_norm.bufa">
+      <Filter>AssetsOut\City\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\NormalBuffers\streetlight.x_main_nb.bufa">
+      <Filter>AssetsOut\City\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\NormalBuffers\wings.x_lwing_nb.bufa">
+      <Filter>AssetsOut\City\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\NormalBuffers\wings.x_rwing_nb.bufa">
+      <Filter>AssetsOut\City\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\PositionBuffers\brickspire.x_main_vb.bufa">
+      <Filter>AssetsOut\City\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\PositionBuffers\SoldierTransform_pos.bufa">
+      <Filter>AssetsOut\City\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\PositionBuffers\streetlight.x_main_vb.bufa">
+      <Filter>AssetsOut\City\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\PositionBuffers\wings.x_lwing_vb.bufa">
+      <Filter>AssetsOut\City\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\PositionBuffers\wings.x_rwing_vb.bufa">
+      <Filter>AssetsOut\City\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Skeletons\soldier_Soldier_Skeleton.skela">
+      <Filter>AssetsOut\City\Skeletons</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Skins\SoldierTransform.skina">
+      <Filter>AssetsOut\City\Skins</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\SkinWeights\SoldierTransform.swghta">
+      <Filter>AssetsOut\City\SkinWeights</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TangentBuffers\brickspire.x_main_tb.bufa">
+      <Filter>AssetsOut\City\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TangentBuffers\SoldierTransform_tang.bufa">
+      <Filter>AssetsOut\City\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TangentBuffers\streetlight.x_main_tb.bufa">
+      <Filter>AssetsOut\City\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TangentBuffers\wings.x_lwing_tb.bufa">
+      <Filter>AssetsOut\City\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TangentBuffers\wings.x_rwing_tb.bufa">
+      <Filter>AssetsOut\City\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TexCoordBuffers\brickspire.x_main_tcb.bufa">
+      <Filter>AssetsOut\City\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TexCoordBuffers\SoldierTransform_tex_coord_0.bufa">
+      <Filter>AssetsOut\City\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TexCoordBuffers\streetlight.x_main_tcb.bufa">
+      <Filter>AssetsOut\City\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TexCoordBuffers\wings.x_lwing_tcb.bufa">
+      <Filter>AssetsOut\City\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\TexCoordBuffers\wings.x_rwing_tcb.bufa">
+      <Filter>AssetsOut\City\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\D-Top-View.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_0.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_0_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_0_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_451.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_451_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\de_wanda_material_451_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_0.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_0_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_0_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_1.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_120.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_120_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_120_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_16.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_16_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_16_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_18.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_18_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_18_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_19.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_19_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_19_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_1_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_1_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_228.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_228_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_228_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_29.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_29_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_29_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_333.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_333_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_333_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_34.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_34_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_34_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_40.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_40_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_40_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_43.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_43_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_43_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_465.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_465_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_465_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_480.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_480_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_480_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_492.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_492_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_492_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_493.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_493_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_493_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_498.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_498_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_498_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_500.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_500_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_500_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_504.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_504_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_504_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_505.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_505_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_505_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_509.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_509_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_509_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_58.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_58_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_58_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_71.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_71_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_71_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_8.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_8_NRM.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\dod_kolsch_material_8_SPEC.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\City\Textures\streetlight_glow.dds">
+      <Filter>AssetsOut\City\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\IndexBuffers\xform_index.bufa">
+      <Filter>AssetsOut\DebugAxis\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\Materials\xform_rgb.mata">
+      <Filter>AssetsOut\DebugAxis\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\MaterialSets\xform.mseta">
+      <Filter>AssetsOut\DebugAxis\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\Meshes\xform.mesha">
+      <Filter>AssetsOut\DebugAxis\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\NormalBuffers\xform_norm.bufa">
+      <Filter>AssetsOut\DebugAxis\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\PositionBuffers\xform_pos.bufa">
+      <Filter>AssetsOut\DebugAxis\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\TangentBuffers\xform_tang.bufa">
+      <Filter>AssetsOut\DebugAxis\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\TexCoordBuffers\xform_tex_coord_0.bufa">
+      <Filter>AssetsOut\DebugAxis\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\Textures\rgb.dds">
+      <Filter>AssetsOut\DebugAxis\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\DebugAxis\VertexBuffers\xform_pos.bufa">
+      <Filter>AssetsOut\DebugAxis\VertexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationNameSets\brokenplane.x.nset">
+      <Filter>AssetsOut\Default\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationNameSets\kingtiger.x.nset">
+      <Filter>AssetsOut\Default\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationNameSets\necro.x_animation_name_set.animnameseta">
+      <Filter>AssetsOut\Default\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationNameSets\soldier.x.nset">
+      <Filter>AssetsOut\Default\AnimationNameSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSets\brokenplane.x_animation_set.animseta">
+      <Filter>AssetsOut\Default\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSets\kingtiger.x_animation_set.animseta">
+      <Filter>AssetsOut\Default\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSets\necro.x_animation_set.animseta">
+      <Filter>AssetsOut\Default\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSets\soldier.x_animation_set.animseta">
+      <Filter>AssetsOut\Default\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSpeedSets\brokenplane.x.sset">
+      <Filter>AssetsOut\Default\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSpeedSets\kingtiger.x.sset">
+      <Filter>AssetsOut\Default\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSpeedSets\necro.x_animation_speed_set.animspeedseta">
+      <Filter>AssetsOut\Default\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\AnimationSpeedSets\soldier.x.sset">
+      <Filter>AssetsOut\Default\AnimationSpeedSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\DirLight.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SkinNaziSoldier.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SMBrokenPlaneMeta.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SMCobblePlane.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SMImrod.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SMKingTigerMeta.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SMNaziCarMeta.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GameObjectMetaScripts\SpotLight.py">
+      <Filter>AssetsOut\Default\GameObjectMetaScripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\APIAbstraction.gpu">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\blendhelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\blurhelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_Structs.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\depthstencilhelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\DetailedMesh_Structs.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Instanced_CS.cgcs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Reduce_Instanced_CS.cgcs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Structs.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\lighthelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\rasterizerhelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\ReducedMesh_Title_PS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\Replace_BS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\samplerhelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\shadowmaphelper.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\SkyBox.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\SolidBackCullNoBias_RS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\SolidBackCullZBias_RS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StandardConstants.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StandardInstancingConstants.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StandardTextureResources.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMeshBlendShapes_Shadowed_Tech.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMeshBlendShapes_Shadowed_VS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMeshBlendShapes_Structs.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMeshBlendShapes_ZOnly_Tech.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMeshBlendShapes_ZOnly_VS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Shadowed_PS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Structs.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_ZOnly_PS.cgelf">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_ZOnly_Tech.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\ZBufferLookup_DSS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\GPUPrograms\ZBuffer_DSS.fx">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\box.x_main_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\brokenplane.x_main_ib.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\brokenplane.x_main_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\cobbleplane.x_pplaneshape1_ib.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\imrod.x_imrodmesh_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\kingtiger.x_main_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\nazicar.x_carmesh_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\necro.x_necrofinal_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\IndexBuffers\soldier.x_soldiermesh_index_buffer.bufa">
+      <Filter>AssetsOut\Default\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\box.x_lambert1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\box.x_rgb_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat0_m.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat0_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat1_m.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat2_m.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\brokenplane.x_brokenplanemat2_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\cobbleplane.x_lambert2_m.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\imrod.x_blinn1_material.lua">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\imrod.x_blinn1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\kingtiger.x_kingtigermat_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\kingtiger.x_lambert1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\nazicar.x_lambert1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\nazicar.x_material_969_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\necro.x_ghosttransp_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\necro.x_lambert1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\necro.x_lambert2_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\necro.x_necrofinalmat_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\necro.x_pasted__pasted__ec_uv_material1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\soldier.x_lambert1_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Materials\soldier.x_ss_normal_texture_material.mata">
+      <Filter>AssetsOut\Default\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\box.x_main_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\brokenplane.x_main_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\brokenplane.x_main_ms.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\cobbleplane.x_pplaneshape1_ms.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\imrod.x_imrodmesh_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\kingtiger.x_main_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\nazicar.x_carmesh_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\necro.x_necrofinal_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\MaterialSets\soldier.x_soldiermesh_material_set.mseta">
+      <Filter>AssetsOut\Default\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\box.x_main_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\brokenplane.x_main_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\cobbleplane.x_pplaneshape1_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\imrod.x_imrodmesh_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\kingtiger.x_main_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\nazicar.x_carmesh_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\necro.x_necrofinal_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\pCube1.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\pSphere1.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\soldier.x_soldiermesh_mesh.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\SoldierTransform.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Meshes\Violin.mesha">
+      <Filter>AssetsOut\Default\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\box.x_main_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\brokenplane.x_main_nb.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\brokenplane.x_main_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\cobbleplane.x_pplaneshape1_nb.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\imrod.x_imrodmesh_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\kingtiger.x_main_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\nazicar.x_carmesh_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\necro.x_necrofinal_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\NormalBuffers\soldier.x_soldiermesh_normal_buffer.bufa">
+      <Filter>AssetsOut\Default\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\box.x_main_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\brokenplane.x_main_vb.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\brokenplane.x_main_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\cobbleplane.x_pplaneshape1_vb.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\imrod.x_imrodmesh_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\kingtiger.x_main_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\nazicar.x_carmesh_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\necro.x_necrofinal_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\PositionBuffers\soldier.x_soldiermesh_vertex_buffer.bufa">
+      <Filter>AssetsOut\Default\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Scripts\LightSource.lua">
+      <Filter>AssetsOut\Default\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Scripts\Skin.lua">
+      <Filter>AssetsOut\Default\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Scripts\StaticMesh.lua">
+      <Filter>AssetsOut\Default\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Skeletons\necro.x_skeleton.skela">
+      <Filter>AssetsOut\Default\Skeletons</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Skeletons\soldier.x_skeleton.skela">
+      <Filter>AssetsOut\Default\Skeletons</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Skins\necro.x_necrofinal_skin.skina">
+      <Filter>AssetsOut\Default\Skins</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Skins\soldier.x_soldiermesh_skin.skina">
+      <Filter>AssetsOut\Default\Skins</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\SkinWeights\necro.x_necrofinal_skin_weights.swghta">
+      <Filter>AssetsOut\Default\SkinWeights</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\SkinWeights\soldier.x_soldiermesh_skin_weights.swghta">
+      <Filter>AssetsOut\Default\SkinWeights</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\box.x_main_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\brokenplane.x_main_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\brokenplane.x_main_tb.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\cobbleplane.x_pplaneshape1_tb.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\imrod.x_imrodmesh_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\kingtiger.x_main_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\nazicar.x_carmesh_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\necro.x_necrofinal_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TangentBuffers\soldier.x_soldiermesh_tangent_buffer.bufa">
+      <Filter>AssetsOut\Default\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\box.x_main_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\brokenplane.x_main_tcb.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\brokenplane.x_main_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\cobbleplane.x_pplaneshape1_tcb.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\imrod.x_imrodmesh_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\kingtiger.x_main_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\nazicar.x_carmesh_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\necro.x_necrofinal_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\TexCoordBuffers\soldier.x_soldiermesh_texcoord_buffer.bufa">
+      <Filter>AssetsOut\Default\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\black.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\cobble2_color.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\cobble2_normal.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\cobble2_spec.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\font512.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\ground084.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\ground084_NRM.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\ground084_SPEC.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Imrod_Diffuse.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Imrod_Glow.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Imrod_norm.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Imrod_spec.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\MISSING_ASSET.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Nazi_Car.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\necronaut.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\necronaut_NRM.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\New_Necro_Skin_light.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\noise.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\noise.dds.previous_version">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Plane_body.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Plane_panel.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Plane_wings.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\rgb.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\Soldier_NRM.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\SS_Soldier_Final_Texture.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\SS_Soldier_Final_Texture_512.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Default\Textures\tank_kingTiger_texture.dds">
+      <Filter>AssetsOut\Default\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\IndexBuffers\space_frigate_6_index.bufa">
+      <Filter>AssetsOut\Frigate\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Materials\space_frigate_6_space_frigate_6.lua">
+      <Filter>AssetsOut\Frigate\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Materials\space_frigate_6_space_frigate_6.mata">
+      <Filter>AssetsOut\Frigate\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\MaterialSets\space_frigate_6.mseta">
+      <Filter>AssetsOut\Frigate\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Meshes\space_frigate_6.mesha">
+      <Filter>AssetsOut\Frigate\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\NormalBuffers\space_frigate_6_norm.bufa">
+      <Filter>AssetsOut\Frigate\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\PositionBuffers\space_frigate_6_pos.bufa">
+      <Filter>AssetsOut\Frigate\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\TangentBuffers\space_frigate_6_tang.bufa">
+      <Filter>AssetsOut\Frigate\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\TexCoordBuffers\space_frigate_6_tex_coord_0.bufa">
+      <Filter>AssetsOut\Frigate\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Textures\blue_normal.dds">
+      <Filter>AssetsOut\Frigate\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Textures\cobble2_normal.dds">
+      <Filter>AssetsOut\Frigate\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Textures\space_frigate_6_color.dds">
+      <Filter>AssetsOut\Frigate\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Frigate\Textures\space_frigate_6_specular.dds">
+      <Filter>AssetsOut\Frigate\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\IndexBuffers\polySurface1_index.bufa">
+      <Filter>AssetsOut\PE\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\IndexBuffers\Trim_Char_P_1_1_index.bufa">
+      <Filter>AssetsOut\PE\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Materials\PEObject0__pPlane1_PEObject0__lambert2.mata">
+      <Filter>AssetsOut\PE\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Materials\PEObject1__TspotRep_PEObject1__rgb.mata">
+      <Filter>AssetsOut\PE\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Materials\PEObject2__polySurface1_PEObject2__rgb.mata">
+      <Filter>AssetsOut\PE\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Materials\polySurface1_lambert1.mata">
+      <Filter>AssetsOut\PE\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Materials\Trim_Char_P_1_1_lambert1.mata">
+      <Filter>AssetsOut\PE\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\MaterialSets\polySurface1.mseta">
+      <Filter>AssetsOut\PE\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\MaterialSets\Trim_Char_P_1_1.mseta">
+      <Filter>AssetsOut\PE\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Meshes\polySurface1.mesha">
+      <Filter>AssetsOut\PE\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Meshes\Trim_Char_P_1_1.mesha">
+      <Filter>AssetsOut\PE\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\NormalBuffers\polySurface1_norm.bufa">
+      <Filter>AssetsOut\PE\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\NormalBuffers\Trim_Char_P_1_1_norm.bufa">
+      <Filter>AssetsOut\PE\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\TangentBuffers\polySurface1_tang.bufa">
+      <Filter>AssetsOut\PE\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\TangentBuffers\Trim_Char_P_1_1_tang.bufa">
+      <Filter>AssetsOut\PE\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\TexCoordBuffers\polySurface1_tex_coord_0.bufa">
+      <Filter>AssetsOut\PE\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\TexCoordBuffers\Trim_Char_P_1_1_tex_coord_0.bufa">
+      <Filter>AssetsOut\PE\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\Textures\black.dds">
+      <Filter>AssetsOut\PE\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\VertexBuffers\polySurface1_pos.bufa">
+      <Filter>AssetsOut\PE\VertexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\PE\VertexBuffers\Trim_Char_P_1_1_pos.bufa">
+      <Filter>AssetsOut\PE\VertexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\AnimationSets\soldier_Soldier_Skeleton.animseta">
+      <Filter>AssetsOut\Soldier\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\IndexBuffers\SoldierTransform_index.bufa">
+      <Filter>AssetsOut\Soldier\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Materials\SoldierTransform_SS_Normal_Texture.mata">
+      <Filter>AssetsOut\Soldier\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\MaterialSets\SoldierTransform.mseta">
+      <Filter>AssetsOut\Soldier\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Meshes\SoldierTransform.mesha">
+      <Filter>AssetsOut\Soldier\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\NormalBuffers\SoldierTransform_norm.bufa">
+      <Filter>AssetsOut\Soldier\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\PositionBuffers\SoldierTransform_pos.bufa">
+      <Filter>AssetsOut\Soldier\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Skeletons\soldier_Soldier_Skeleton.skela">
+      <Filter>AssetsOut\Soldier\Skeletons</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\SkinWeights\SoldierTransform.swghta">
+      <Filter>AssetsOut\Soldier\SkinWeights</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\TangentBuffers\SoldierTransform_tang.bufa">
+      <Filter>AssetsOut\Soldier\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\TexCoordBuffers\SoldierTransform_tex_coord_0.bufa">
+      <Filter>AssetsOut\Soldier\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Textures\black.dds">
+      <Filter>AssetsOut\Soldier\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Textures\Soldier_NRM.dds">
+      <Filter>AssetsOut\Soldier\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Textures\SS_Soldier_Final_Texture.dds">
+      <Filter>AssetsOut\Soldier\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Soldier\Textures\SS_Soldier_Final_Texture_512.dds">
+      <Filter>AssetsOut\Soldier\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\AnimationSets\vampire-action-adventure-pack_Hips.animseta">
+      <Filter>AssetsOut\Vampire\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\AnimationSets\vampire-sample-action-pack_Hips.animseta">
+      <Filter>AssetsOut\Vampire\AnimationSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\IndexBuffers\Vampire_index.bufa">
+      <Filter>AssetsOut\Vampire\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Materials\Vampire_Vampire_MAT.lua">
+      <Filter>AssetsOut\Vampire\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Materials\Vampire_Vampire_MAT.mata">
+      <Filter>AssetsOut\Vampire\Materials</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\MaterialSets\Vampire.mseta">
+      <Filter>AssetsOut\Vampire\MaterialSets</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Meshes\Vampire.mesha">
+      <Filter>AssetsOut\Vampire\Meshes</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\NormalBuffers\Vampire_norm.bufa">
+      <Filter>AssetsOut\Vampire\NormalBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\PositionBuffers\Vampire_pos.bufa">
+      <Filter>AssetsOut\Vampire\PositionBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Skeletons\vampire-t-pose_Hips.skela">
+      <Filter>AssetsOut\Vampire\Skeletons</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\SkinWeights\Vampire.swghta">
+      <Filter>AssetsOut\Vampire\SkinWeights</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\TangentBuffers\Vampire_tang.bufa">
+      <Filter>AssetsOut\Vampire\TangentBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\TexCoordBuffers\Vampire_tex_coord_0.bufa">
+      <Filter>AssetsOut\Vampire\TexCoordBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Textures\Vampire_diffuse.dds">
+      <Filter>AssetsOut\Vampire\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Textures\Vampire_emission.dds">
+      <Filter>AssetsOut\Vampire\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Textures\Vampire_normal.dds">
+      <Filter>AssetsOut\Vampire\Textures</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Vampire\Textures\Vampire_specular.dds">
+      <Filter>AssetsOut\Vampire\Textures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameIOSInput.h" />
+    <ClInclude Include="GameThreadJob.h" />
+    <ClInclude Include="PrimeEngineIncludes.h" />
+    <ClInclude Include="RenderJob.h" />
+    <ClInclude Include="APIAbstraction\APIAbstractionDefines.h">
+      <Filter>APIAbstraction</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_IndexBufferGPU.h">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_ResourceBufferGPU.h">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_VertexBufferGPU.h">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX9\D3D9_GPUBuffers\D3D9_IndexBufferGPU.h">
+      <Filter>APIAbstraction\DirectX9\D3D9_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX9\D3D9_GPUBuffers\D3D9_VertexBufferGPU.h">
+      <Filter>APIAbstraction\DirectX9\D3D9_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX9\DX9_KeyboardMouse\DX9_KeyboardMouse.h">
+      <Filter>APIAbstraction\DirectX9\DX9_KeyboardMouse</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\DirectX9\DX9_XInput\DX9_XInput.h">
+      <Filter>APIAbstraction\DirectX9\DX9_XInput</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\Effect.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\EffectEnums.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\EffectManager.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\ExternalPerTechniqueData.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\GLSLAttributes.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\PEAlphaBlendState.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\PEDepthStencilState.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\PERasterizerState.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Effect\SpeShader.h">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\AnimSetBufferGPU.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\BufferInfo.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\IndexBufferGPU.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\ResourceBufferGPU.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\VertexBufferGPU.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUBuffers\VertexBufferGPUManager.h">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUMaterial\GPUMaterial.h">
+      <Filter>APIAbstraction\GPUMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\GPUMaterial\GPUMaterialSet.h">
+      <Filter>APIAbstraction\GPUMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Input\Input.h">
+      <Filter>APIAbstraction\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\OGL\OGL_GPUBuffers\OGL_IndexBufferGPU.h">
+      <Filter>APIAbstraction\OGL\OGL_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\OGL\OGL_GPUBuffers\OGL_VertexBufferGPU.h">
+      <Filter>APIAbstraction\OGL\OGL_GPUBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\GPUTextureManager.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\SamplerState.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\Texture.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\Texture_DDS_Loader_Common.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\Texture_DDS_Loader_D3D.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Texture\Texture_DDS_Loader_GL.h">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Threading\Threading.h">
+      <Filter>APIAbstraction\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Timer\Timer.h">
+      <Filter>APIAbstraction\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="APIAbstraction\Timer\WinTimer.h">
+      <Filter>APIAbstraction\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\WinApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Component.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\Event.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\EventQueue.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\EventQueueManager.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\StandardControllerEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\StandardEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\StandardGameEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events\StandardKeyboardEvents.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem\FileReader.h">
+      <Filter>FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem\FileWriter.h">
+      <Filter>FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Client\ClientGame.h">
+      <Filter>Game\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\GameContext.h">
+      <Filter>Game\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common\GlobalRegistry.h">
+      <Filter>Game\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Server\ServerGame.h">
+      <Filter>Game\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectModel\Camera.h">
+      <Filter>GameObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectModel\GameObjectManager.h">
+      <Filter>GameObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectModel\PhysXComponent.h">
+      <Filter>GameObjectModel</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectModel\DefaultGameControls\DefaultGameControls.h">
+      <Filter>GameObjectModel\DefaultGameControls</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ColorBufferCPU.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\IndexBufferCPU\IndexBufferCPU.h">
+      <Filter>Geometry\IndexBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\MaterialCPU\MaterialCPU.h">
+      <Filter>Geometry\MaterialCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\MaterialCPU\MaterialSetCPU.h">
+      <Filter>Geometry\MaterialCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\MeshCPU\MeshCPU.h">
+      <Filter>Geometry\MeshCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\MeshCPU\PointListCPU.h">
+      <Filter>Geometry\MeshCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\NormalBufferCPU\NormalBufferCPU.h">
+      <Filter>Geometry\NormalBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\NormalBufferCPU\NormalBufferCPUManager.h">
+      <Filter>Geometry\NormalBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\BladeFireParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\ExplosionParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\FireParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\ParticleBufferCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\ParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\RainParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ParticleSystemCPU\SmokeParticleSystemCPU.h">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\PositionBufferCPU\PositionBufferCPU.h">
+      <Filter>Geometry\PositionBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\PositionBufferCPU\PositionBufferCPUManager.h">
+      <Filter>Geometry\PositionBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\SkeletonCPU\AnimationCPU.h">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\SkeletonCPU\AnimationSetCPU.h">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\SkeletonCPU\AnimationSetGPUManager.h">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\SkeletonCPU\SkeletonCPU.h">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\SkeletonCPU\SkinWeightsCPU.h">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\TangentBufferCPU\TangentBufferCPU.h">
+      <Filter>Geometry\TangentBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\TexCoordBufferCPU\TexCoordBufferCPU.h">
+      <Filter>Geometry\TexCoordBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\TexCoordBufferCPU\TexCoordBufferCPUManager.h">
+      <Filter>Geometry\TexCoordBufferCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging\Log.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\LuaEnvironment.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\typedefs.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\Client\ClientLuaEnvironment.h">
+      <Filter>Lua\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\EventGlue\EventDataCreators.h">
+      <Filter>Lua\EventGlue</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\Server\ServerLuaEnvironment.h">
+      <Filter>Lua\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunction\MainFunctionArgs.h">
+      <Filter>MainFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunction\MainFunctionBegin.h">
+      <Filter>MainFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunction\MainFunctionEnd.h">
+      <Filter>MainFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFunction\MainFunctionPreEnd_iOS.h">
+      <Filter>MainFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CameraOps.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathHelpers.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix3x3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\TSQ.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManagement\Handle.h">
+      <Filter>MemoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManagement\MemoryManager.h">
+      <Filter>MemoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManagement\MemoryPool.h">
+      <Filter>MemoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\ConnectionManager.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\EventManager.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\EventTransmissionData.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\NetworkContext.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\NetworkManager.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\Packet.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\StreamManager.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\Client\ClientConnectionManager.h">
+      <Filter>Networking\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\Client\ClientNetworkManager.h">
+      <Filter>Networking\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\Server\ServerConnectionManager.h">
+      <Filter>Networking\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking\Server\ServerNetworkManager.h">
+      <Filter>Networking\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveTypes\PrimitiveTypes.h">
+      <Filter>PrimitiveTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Profiling\Profiling.h">
+      <Filter>Profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\GLRenderer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\IRenderer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\MiscShaderActions.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SA_Bind_Resource.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SA_CopyInto_SysMem_FromInstancedObjectsAnimationCSReduceResult.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SA_SetAndBind_ConstResource_InstancedObjectsAnimationPalettes.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SA_SetAndBind_ConstResource_PerInstanceData.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SA_SetAndBind_ConstResource_SingleObjectAnimationPalette.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetInstanceControlConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetInstancesTransformsConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetPerFrameConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetPerMaterialConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetPerObjectConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\SetPerObjectGroupConstantsShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ShaderActions\ShaderAction.h">
+      <Filter>Render\ShaderActions</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Camera.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CameraManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CameraSceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\DebugRenderer.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\DefaultAnimationSM.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\DrawList.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\InstancingSceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Light.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LineMesh.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Mesh.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MeshInstance.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MeshManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\RootSceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SH_DRAW.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Skeleton.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SkeletonInstance.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SkyVolumeMesh.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TextMesh.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TextSceneNode.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound\SoundManager.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Dir.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ErrorHandling.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\HandlesToHandleMap.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Networkable.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PEClassDecl.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PEMap.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PEString.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PEUUID.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Queue.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringOps.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StrToHandleMap.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Array\Array.h">
+      <Filter>Utils\Array</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameThreadJob.cpp" />
+    <ClCompile Include="RenderJob.cpp" />
+    <ClCompile Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_IndexBufferGPU.cpp">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_ResourceBufferGPU.cpp">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX11\D3D11_GPUBuffers\D3D11_VertexBufferGPU.cpp">
+      <Filter>APIAbstraction\DirectX11\D3D11_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX9\D3D9_GPUBuffers\D3D9_IndexBufferGPU.cpp">
+      <Filter>APIAbstraction\DirectX9\D3D9_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX9\D3D9_GPUBuffers\D3D9_VertexBufferGPU.cpp">
+      <Filter>APIAbstraction\DirectX9\D3D9_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX9\DX9_KeyboardMouse\DX9_KeyboardMouse.cpp">
+      <Filter>APIAbstraction\DirectX9\DX9_KeyboardMouse</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\DirectX9\DX9_XInput\DX9_XInput.cpp">
+      <Filter>APIAbstraction\DirectX9\DX9_XInput</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\EffectManager.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\EffectManagerEffects.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect_D3D11.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect_D3D9.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect_GL.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect_Lua.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\Effect_PSVita.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\ExternalPerTechniqueData.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\GLSLAttributes.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\PEAlphaBlendState.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\PEDepthStencilState.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Effect\PERasterizerState.cpp">
+      <Filter>APIAbstraction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\AnimSetBufferGPU.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\BufferInfo.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\IndexBufferGPU.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\ResourceBufferGPU.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\VertexBufferGPU.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\VertexBufferGPUInputGeoDescs.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUBuffers\VertexBufferGPUManager.cpp">
+      <Filter>APIAbstraction\GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\GPUMaterial\GPUMaterial.cpp">
+      <Filter>APIAbstraction\GPUMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Input\Input.cpp">
+      <Filter>APIAbstraction\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\OGL\OGL_GPUBuffers\OGL_IndexBufferGPU.cpp">
+      <Filter>APIAbstraction\OGL\OGL_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\OGL\OGL_GPUBuffers\OGL_VertexBufferGPU.cpp">
+      <Filter>APIAbstraction\OGL\OGL_GPUBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\GPUTextureManager.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\SamplerState.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DDS_Loader_Common.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DDS_Loader_GL.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DDS_Loader_PSVita.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DrawableIntoColorTexture.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DrawableIntoColorTextureArray.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DrawableIntoColorTextureWithDepth.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Texture\Texture_DrawableIntoDepthTexture.cpp">
+      <Filter>APIAbstraction\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Timer\Timer.cpp">
+      <Filter>APIAbstraction\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="APIAbstraction\Timer\WinTimer.cpp">
+      <Filter>APIAbstraction\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\WinApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Component.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Event.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\EventQueue.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\EventQueueManager.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\StandardControllerEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\StandardEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\StandardGameEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\StandardKeyboardEvents.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem\FileReader.cpp">
+      <Filter>FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem\FileWriter.cpp">
+      <Filter>FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Client\ClientGame.cpp">
+      <Filter>Game\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\GameContext.cpp">
+      <Filter>Game\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Common\GlobalRegistry.cpp">
+      <Filter>Game\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Server\ServerGame.cpp">
+      <Filter>Game\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectModel\Camera.cpp">
+      <Filter>GameObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectModel\GameObjectManager.cpp">
+      <Filter>GameObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectModel\PhysXComponent.cpp">
+      <Filter>GameObjectModel</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectModel\DefaultGameControls\DefaultGameControls.cpp">
+      <Filter>GameObjectModel\DefaultGameControls</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ColorBufferCPU.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\IndexBufferCPU\IndexBufferCPU.cpp">
+      <Filter>Geometry\IndexBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\MaterialCPU\MaterialCPU.cpp">
+      <Filter>Geometry\MaterialCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\MaterialCPU\MaterialSetCPU.cpp">
+      <Filter>Geometry\MaterialCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\MeshCPU\MeshCPU.cpp">
+      <Filter>Geometry\MeshCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\MeshCPU\PointListCPU.cpp">
+      <Filter>Geometry\MeshCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\NormalBufferCPU\NormalBufferCPU.cpp">
+      <Filter>Geometry\NormalBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\NormalBufferCPU\NormalBufferCPUManager.cpp">
+      <Filter>Geometry\NormalBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\BladeFireParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\ExplosionParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\FireParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\ParticleBufferCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\ParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\RainParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ParticleSystemCPU\SmokeParticleSystemCPU.cpp">
+      <Filter>Geometry\ParticleSystemCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\PositionBufferCPU\PositionBufferCPU.cpp">
+      <Filter>Geometry\PositionBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\PositionBufferCPU\PositionBufferCPUManager.cpp">
+      <Filter>Geometry\PositionBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\SkeletonCPU\AnimationCPU.cpp">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\SkeletonCPU\AnimationSetCPU.cpp">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\SkeletonCPU\AnimationSetGPUManager.cpp">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\SkeletonCPU\SkeletonCPU.cpp">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\SkeletonCPU\SkinWeightsCPU.cpp">
+      <Filter>Geometry\SkeletonCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\TangentBufferCPU\TangentBuferCPU.cpp">
+      <Filter>Geometry\TangentBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\TexCoordBufferCPU\TexCoordBufferCPU.cpp">
+      <Filter>Geometry\TexCoordBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\TexCoordBufferCPU\TexCoordBufferCPUManager.cpp">
+      <Filter>Geometry\TexCoordBufferCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\Log.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\LuaEnvironment.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\Client\ClientLuaEnvironment.cpp">
+      <Filter>Lua\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\EventGlue\EventDataCreators.cpp">
+      <Filter>Lua\EventGlue</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\Server\ServerLuaEnvironment.cpp">
+      <Filter>Lua\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFunction\MainFunctionArgs.cpp">
+      <Filter>MainFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CameraOps.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManagement\MemoryManager.cpp">
+      <Filter>MemoryManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManagement\MemoryPool.cpp">
+      <Filter>MemoryManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\ConnectionManager.cpp">
+      <Filter>Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\EventManager.cpp">
+      <Filter>Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\NetworkManager.cpp">
+      <Filter>Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\StreamManager.cpp">
+      <Filter>Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\Client\ClientConnectionManager.cpp">
+      <Filter>Networking\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\Client\ClientNetworkManager.cpp">
+      <Filter>Networking\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\Server\ServerConnectionManager.cpp">
+      <Filter>Networking\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking\Server\ServerNetworkManager.cpp">
+      <Filter>Networking\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiling\Profiling.cpp">
+      <Filter>Profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\GLRenderer.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\IRenderer.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\MiscShaderActions.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SA_Bind_Resource.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SA_CopyInto_SysMem_FromInstancedObjectsAnimationCSReduceResult.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SA_SetAndBind_ConstResource_InstancedObjectsAnimationPalettes.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SA_SetAndBind_ConstResource_PerInstanceData.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SA_SetAndBind_ConstResource_SingleObjectAnimationPalette.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetInstanceControlConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetInstancesTransformsConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetPerFrameConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetPerMaterialConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetPerObjectConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\SetPerObjectGroupConstantsShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ShaderActions\ShaderAction.cpp">
+      <Filter>Render\ShaderActions</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CameraManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CameraSceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\DebugRenderer.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\DefaultAnimationSM.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\DrawList.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\InstancingSceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Light.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LineMesh.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Mesh.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MeshInstance.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MeshManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\RootSceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SH_DRAW.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Skeleton.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SkeletonInstance.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SkyVolumeMesh.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TextMesh.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TextSceneNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound\SoundManager.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Dir.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ErrorHandling.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Networkable.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\PEString.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\AssetsOut\Default\GPUPrograms\nums_spe.c">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_2D_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_A_0_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_GlowSeparation_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_HorizontalBlur_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_MotionBlur_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_VertBlurCombine_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\ColoredMinimalMesh_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedMesh_Shadowed_A_Glow_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedMesh_Shadowed_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedMesh_ZOnly_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedMesh_ZOnly_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Instanced_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Shadowed_Instanced_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_Shadowed_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\DetailedSkin_ZOnly_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_2D_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Diffuse_A_0_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Diffuse_A_RGBIntensity_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Diffuse_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Shadowed_A_0_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_Shadowed_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_ZOnly_PS.cgps">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\AssetsOut\Default\GPUPrograms\StdMesh_ZOnly_VS.cgvs">
+      <Filter>AssetsOut\Default\GPUPrograms</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

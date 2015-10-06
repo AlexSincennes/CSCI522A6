@@ -55,6 +55,9 @@ void CharacterControl::Register(PE::Components::LuaEnvironment *pLuaEnv, PE::Glo
 					ServerGameObjectManagerAddon::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 				ClientSpaceShip::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 				SpaceShipGameControls::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+				A6character::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+				A6cAnimationSM::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+				A6cMovementSM::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 			}
 			// end root.CharacterControl.Components
 			pLuaEnv->EndRegistrationTable();

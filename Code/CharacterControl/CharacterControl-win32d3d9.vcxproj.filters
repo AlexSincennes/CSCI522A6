@@ -1,20 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Characters">
-      <UniqueIdentifier>{7EF56346-65F4-EB4E-9ED3-66CDF62E5222}</UniqueIdentifier>
+      <UniqueIdentifier>{9145E5FC-EEBD-2849-82EE-84EA9C8D8DAC}</UniqueIdentifier>
     </Filter>
     <Filter Include="Client">
-      <UniqueIdentifier>{6F4F7D45-6C62-F149-9CC8-9D643F9672B9}</UniqueIdentifier>
+      <UniqueIdentifier>{F37B10A1-2E9C-ED4A-B514-1F7198322555}</UniqueIdentifier>
     </Filter>
     <Filter Include="Events">
-      <UniqueIdentifier>{3A1894AE-81D5-7C43-B158-681A669A0DFB}</UniqueIdentifier>
+      <UniqueIdentifier>{A51A264C-8D95-9D49-9F72-04B3F448FE18}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tank">
-      <UniqueIdentifier>{F9614E37-72E7-7A45-94E1-BEA295CE651A}</UniqueIdentifier>
+      <UniqueIdentifier>{898EC933-84E0-E346-9806-6D334EF2787D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="A6cAnimationSM.h" />
+    <ClInclude Include="A6character.h" />
+    <ClInclude Include="A6cMovementSM.h" />
     <ClInclude Include="CharacterControlContext.h" />
     <ClInclude Include="ClientCharacterControlGame.h" />
     <ClInclude Include="ClientGameObjectManagerAddon.h" />
@@ -52,17 +55,11 @@
     <ClInclude Include="Tank\ClientTank.h">
       <Filter>Tank</Filter>
     </ClInclude>
-    <ClInclude Include="A6character.h">
-      <Filter>Characters</Filter>
-    </ClInclude>
-    <ClInclude Include="A6cAnimationSM.h">
-      <Filter>Characters</Filter>
-    </ClInclude>
-    <ClInclude Include="A6cMovementSM.h">
-      <Filter>Characters</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="A6cAnimationSM.cpp" />
+    <ClCompile Include="A6character.cpp" />
+    <ClCompile Include="A6cMovementSM.cpp" />
     <ClCompile Include="ClientCharacterControlGame.cpp" />
     <ClCompile Include="ClientGameObjectManagerAddon.cpp" />
     <ClCompile Include="GameObjectManagerAddon.cpp" />
@@ -97,15 +94,6 @@
     </ClCompile>
     <ClCompile Include="Tank\ClientTank.cpp">
       <Filter>Tank</Filter>
-    </ClCompile>
-    <ClCompile Include="A6character.cpp">
-      <Filter>Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="A6cAnimationSM.cpp">
-      <Filter>Characters</Filter>
-    </ClCompile>
-    <ClCompile Include="A6cMovementSM.cpp">
-      <Filter>Characters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

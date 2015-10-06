@@ -24,6 +24,9 @@ struct ClientGameObjectManagerAddon : public GameObjectManagerAddon
 	// sub-component and event registration
 	virtual void addDefaultComponents() ;
 
+	PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_CreateA6Character);
+	virtual void do_CreateA6Character(PE::Events::Event *pEvt);
+
 	PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_CreateSoldierNPC);
 	virtual void do_CreateSoldierNPC(PE::Events::Event *pEvt);
 
@@ -45,6 +48,7 @@ struct ClientGameObjectManagerAddon : public GameObjectManagerAddon
 	void createSpaceShip(int &threadOwnershipMask);
 	void createSoldierNPC(Vector3 pos, int &threadOwnershipMask);
 	void createSoldierNPC(Events::Event_CreateSoldierNPC *pTrueEvent);
+	void createA6Character(Events::Event_CreateA6Character *pTrueEvent);
 
 
 	//////////////////////////////////////////////////////////////////////////

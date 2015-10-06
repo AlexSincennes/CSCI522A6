@@ -3,6 +3,7 @@
 #include "PrimeEngine/PrimeEngineIncludes.h"
 
 #include "Characters/SoldierNPC.h"
+#include "A6character.h"
 #include "WayPoint.h"
 #include "Tank/ClientTank.h"
 #include "CharacterControl/Client/ClientSpaceShip.h"
@@ -22,12 +23,35 @@ void ClientGameObjectManagerAddon::addDefaultComponents()
 	GameObjectManagerAddon::addDefaultComponents();
 
 	PE_REGISTER_EVENT_HANDLER(Event_CreateSoldierNPC, ClientGameObjectManagerAddon::do_CreateSoldierNPC);
+	PE_REGISTER_EVENT_HANDLER(Event_CreateA6Character, ClientGameObjectManagerAddon::do_CreateA6Character);
 	PE_REGISTER_EVENT_HANDLER(Event_CREATE_WAYPOINT, ClientGameObjectManagerAddon::do_CREATE_WAYPOINT);
 
 	// note this component (game obj addon) is added to game object manager after network manager, so network manager will process this event first
 	PE_REGISTER_EVENT_HANDLER(PE::Events::Event_SERVER_CLIENT_CONNECTION_ACK, ClientGameObjectManagerAddon::do_SERVER_CLIENT_CONNECTION_ACK);
 
 	PE_REGISTER_EVENT_HANDLER(Event_MoveTank_S_to_C, ClientGameObjectManagerAddon::do_MoveTank);
+}
+
+void ClientGameObjectManagerAddon::do_CreateA6Character(PE::Events::Event *pEvt)
+{
+	assert(pEvt->isInstanceOf<Event_CreateA6Character>());
+
+	Event_CreateA6Character *pTrueEvent = (Event_CreateA6Character*)(pEvt);
+
+	createA6Character(pTrueEvent);
+}
+
+void ClientGameObjectManagerAddon::createA6Character(Event_CreateA6Character *pTrueEvent)
+{
+	PEINFO("CharacterControl: GameObjectManagerAddon: Creating CreateA6Character\n");
+
+	PE::Handle hA6Character("SoldierNPC", sizeof(A6character));
+	A6character *pA6Character = new(hA6Character) A6character(*m_pContext, m_arena, hA6Character, pTrueEvent);
+	pA6Character->addDefaultComponents();
+
+	// add the soldier as component to the ObjecManagerComponentAddon
+	// all objects of this demo live in the ObjecManagerComponentAddon
+	addComponent(hA6Character);
 }
 
 void ClientGameObjectManagerAddon::do_CreateSoldierNPC(PE::Events::Event *pEvt)

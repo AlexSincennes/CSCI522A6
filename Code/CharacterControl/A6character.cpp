@@ -69,7 +69,7 @@ namespace CharacterControl{
                 addComponent(hSN, &allowedEvts[0]);
             }
 
-            /*
+            
             int numskins = 1; // 8
             for (int iSkin = 0; iSkin < numskins; ++iSkin)
             {
@@ -90,8 +90,8 @@ namespace CharacterControl{
 
                 pRotateSN->m_base.turnLeft(3.1415);
 
-                PE::Handle hSoldierAnimSM("SoldierNPCAnimationSM", sizeof(SoldierNPCAnimationSM));
-                SoldierNPCAnimationSM *pSoldierAnimSM = new(hSoldierAnimSM)SoldierNPCAnimationSM(*m_pContext, m_arena, hSoldierAnimSM);
+                PE::Handle hA6cAnimSM("A6cAnimationSM", sizeof(A6cAnimationSM));
+                A6cAnimationSM *pA6cAnimationSM = new(hA6cAnimSM)A6cAnimationSM(*m_pContext, m_arena, hSoldierAnimSM);
                 pSoldierAnimSM->addDefaultComponents();
 
                 pSoldierAnimSM->m_debugAnimIdOffset = 0;// rand() % 3;
@@ -140,7 +140,7 @@ namespace CharacterControl{
 
                 pMainSN->addComponent(hSN);
             }
-            */
+            
 
             m_pContext->getGPUScreen()->ReleaseRenderContextOwnership(pEvt->m_threadOwnershipMask);
 

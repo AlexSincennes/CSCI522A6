@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FD77F43A-ABCD-4147-B975-CB00D86318B1}</ProjectGuid>
+    <ProjectGuid>{21B53FDC-7777-1D4F-B271-85AD6C4002EC}</ProjectGuid>
     <RootNamespace>CharacterControl-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -20,11 +20,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -61,7 +63,8 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -82,7 +85,10 @@
       <AdditionalOptions> /NODEFAULTLIB:LIBC  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y ..\..\External\DownloadedLibraries\glew-1.9.0\bin\*.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cg.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cgGL.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y &quot;C:/Program Files (x86)/Windows Kits/8.0\bin\x86\d3dcompiler_46.dll&quot; &quot;$(OutDir)&quot; </Command>
+      <Command>copy /Y ..\..\External\DownloadedLibraries\glew-1.9.0\bin\*.dll "$(OutDir)" 
+copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cg.dll "$(OutDir)" 
+copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cgGL.dll "$(OutDir)" 
+copy /Y "C:/Program Files (x86)/Windows Kits/8.0\bin\x86\d3dcompiler_46.dll" "$(OutDir)" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -95,10 +101,12 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>APIABSTRACTION_D3D9=1;PE_PLAT_API=0x0101;PE_PLAT_IS_WIN32=1;PE_API_IS_D3D9=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -117,7 +125,10 @@
       <AdditionalOptions> /NODEFAULTLIB:LIBC  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y ..\..\External\DownloadedLibraries\glew-1.9.0\bin\*.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cg.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cgGL.dll &quot;$(OutDir)&quot; &#x0D;&#x0A;copy /Y &quot;C:/Program Files (x86)/Windows Kits/8.0\bin\x86\d3dcompiler_46.dll&quot; &quot;$(OutDir)&quot; </Command>
+      <Command>copy /Y ..\..\External\DownloadedLibraries\glew-1.9.0\bin\*.dll "$(OutDir)" 
+copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cg.dll "$(OutDir)" 
+copy /Y ..\..\External\DownloadedLibraries\Cg\bin\cgGL.dll "$(OutDir)" 
+copy /Y "C:/Program Files (x86)/Windows Kits/8.0\bin\x86\d3dcompiler_46.dll" "$(OutDir)" </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -194,13 +205,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lua_dist\lua_dist-win32d3d9.vcxproj">
-      <Project>{F26A56D8-F299-8C4B-920A-D43277BC1798}</Project>
+      <Project>{3CC3962E-E375-9E41-8617-720E41BA8CE9}</Project>
     </ProjectReference>
     <ProjectReference Include="..\luasocket_dist\luasocket_dist-win32d3d9.vcxproj">
-      <Project>{68F8335A-0F21-4948-8FE8-6B0F3C2D67ED}</Project>
+      <Project>{051EB254-BACF-0B42-BBCB-EF6FA0BEF64B}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PrimeEngine\PrimeEngine-win32d3d9.vcxproj">
-      <Project>{54F784F1-7DC4-044E-AA00-1FB16DCE229E}</Project>
+      <Project>{3A119B50-AD88-134E-AE34-9828D0D21FD5}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

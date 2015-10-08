@@ -2,19 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Characters">
-      <UniqueIdentifier>{FE4D98A5-F199-BB41-8373-381D8EA2BE4D}</UniqueIdentifier>
+      <UniqueIdentifier>{48A15BE4-FB04-594C-B3C3-0C7D9B548432}</UniqueIdentifier>
     </Filter>
     <Filter Include="Client">
-      <UniqueIdentifier>{574C5B48-D4DD-8247-A7A0-C2B0C3C8C946}</UniqueIdentifier>
+      <UniqueIdentifier>{73FE5932-01E2-654B-A188-000F567EEB68}</UniqueIdentifier>
     </Filter>
     <Filter Include="Events">
-      <UniqueIdentifier>{4F568A2F-2AE1-BB47-A1C8-E9BC9C186CEF}</UniqueIdentifier>
+      <UniqueIdentifier>{77556C02-A419-2841-A624-11C1AEB98266}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tank">
-      <UniqueIdentifier>{B912440E-8781-E34C-A4CB-1783565604C3}</UniqueIdentifier>
+      <UniqueIdentifier>{606A8052-CCAB-304D-9D05-1D5F1AE607D1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="A6cAnimationSM.h" />
+    <ClInclude Include="A6character.h" />
+    <ClInclude Include="A6cMovementSM.h" />
     <ClInclude Include="CharacterControlContext.h" />
     <ClInclude Include="ClientCharacterControlGame.h" />
     <ClInclude Include="ClientGameObjectManagerAddon.h" />
@@ -54,6 +57,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="A6cAnimationSM.cpp" />
+    <ClCompile Include="A6character.cpp" />
+    <ClCompile Include="A6cMovementSM.cpp" />
     <ClCompile Include="ClientCharacterControlGame.cpp" />
     <ClCompile Include="ClientGameObjectManagerAddon.cpp" />
     <ClCompile Include="GameObjectManagerAddon.cpp" />

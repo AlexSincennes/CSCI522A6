@@ -58,6 +58,8 @@ void CharacterControl::Register(PE::Components::LuaEnvironment *pLuaEnv, PE::Glo
 				A6character::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 				A6cAnimationSM::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 				A6cMovementSM::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+                A6cController::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+                A6cControls::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 			}
 			// end root.CharacterControl.Components
 			pLuaEnv->EndRegistrationTable();
@@ -83,6 +85,7 @@ void CharacterControl::Register(PE::Components::LuaEnvironment *pLuaEnv, PE::Glo
                 A6cAnimSM_Event_STOP::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
                 Event_A6C_Throttle::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
                 Event_A6C_Turn::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
+                Event_A6C_Stop::InitializeAndRegister(pLuaEnv, pRegistry, setLuaMetaDataOnly);
 			}
 			// end root.CharacterControl.Events
 			pLuaEnv->EndRegistrationTable();

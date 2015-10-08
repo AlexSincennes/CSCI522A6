@@ -10,6 +10,8 @@
 #include "Characters/SoldierNPCAnimationSM.h"
 #include "CharacterControl/Characters/SoldierNPCAnimationSM.h"
 #include "CharacterControlContext.h"
+#include "A6cMovementSM.h"
+
 #if PE_PLAT_IS_WIN32
 #include "test.h"
 #endif
@@ -71,11 +73,19 @@ int ClientCharacterControlGame::initGame()
 		pGameCtx->m_pTankGameControls = new(h) TankGameControls(*m_pContext, m_arena, h);
 		pGameCtx->getTankGameControls()->addDefaultComponents();
 
-		// add it to game object manager addon
-		pGameCtx->getGameObjectManagerAddon()->addComponent(h);
+        // add it to game object manager addon
+        pGameCtx->getGameObjectManagerAddon()->addComponent(h);
 
-		// start deactivated. needs to be deactivated AFTER adding it to parent components
-		pGameCtx->getTankGameControls()->setEnabled(false);
+        // start deactivated. needs to be deactivated AFTER adding it to parent components
+        pGameCtx->getTankGameControls()->setEnabled(false);
+
+        // create a6c controls
+        PE::Handle h2("A6cControls", sizeof(A6cControls));
+        pGameCtx->m_pA6cControls = new(h2)A6cControls(*m_pContext, m_arena, h2);
+        pGameCtx->getA6cControls()->addDefaultComponents();
+
+        pGameCtx->getGameObjectManagerAddon()->addComponent(h2);
+
 
 #if !PE_API_IS_D3D11
 		{

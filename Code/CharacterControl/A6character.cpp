@@ -51,8 +51,8 @@ namespace CharacterControl{
             // need to acquire redner context for this code to execute thread-safe
             m_pContext->getGPUScreen()->AcquireRenderContextOwnership(pEvt->m_threadOwnershipMask);
 
-            PE::Handle hSN("SCENE_NODE", sizeof(SceneNode));
-            SceneNode *pMainSN = new(hSN)SceneNode(*m_pContext, m_arena, hSN);
+            PE::Handle hmainSN("SCENE_NODE", sizeof(SceneNode));
+            SceneNode *pMainSN = new(hmainSN)SceneNode(*m_pContext, m_arena, hmainSN);
             pMainSN->addDefaultComponents();
 
             pMainSN->m_base.setPos(pEvt->m_pos);
@@ -61,12 +61,12 @@ namespace CharacterControl{
             pMainSN->m_base.setN(pEvt->m_n);
 
 
-            RootSceneNode::Instance()->addComponent(hSN);
+            RootSceneNode::Instance()->addComponent(hmainSN);
 
             // add the scene node as component of soldier without any handlers. this is just data driven way to locate scnenode for soldier's components
             {
                 static int allowedEvts[] = { 0 };
-                addComponent(hSN, &allowedEvts[0]);
+                addComponent(hmainSN, &allowedEvts[0]);
             }
 
             
@@ -91,19 +91,19 @@ namespace CharacterControl{
                 pRotateSN->m_base.turnLeft(3.1415);
 
                 PE::Handle hA6cAnimSM("A6cAnimationSM", sizeof(A6cAnimationSM));
-                A6cAnimationSM *pA6cAnimationSM = new(hA6cAnimSM)A6cAnimationSM(*m_pContext, m_arena, hSoldierAnimSM);
-                pSoldierAnimSM->addDefaultComponents();
+                A6cAnimationSM *pA6cAnimationSM = new(hA6cAnimSM)A6cAnimationSM(*m_pContext, m_arena, hA6cAnimSM);
+                pA6cAnimationSM->addDefaultComponents();
 
-                pSoldierAnimSM->m_debugAnimIdOffset = 0;// rand() % 3;
+                pA6cAnimationSM->m_debugAnimIdOffset = 0;// rand() % 3;
 
                 PE::Handle hSkeletonInstance("SkeletonInstance", sizeof(SkeletonInstance));
                 SkeletonInstance *pSkelInst = new(hSkeletonInstance)SkeletonInstance(*m_pContext, m_arena, hSkeletonInstance,
-                    hSoldierAnimSM);
+                    hA6cAnimSM);
                 pSkelInst->addDefaultComponents();
 
-                pSkelInst->initFromFiles("soldier_Soldier_Skeleton.skela", "Soldier", pEvt->m_threadOwnershipMask);
+                pSkelInst->initFromFiles("MichaelStand_hip.skela", "MichealPackage", pEvt->m_threadOwnershipMask);
 
-                pSkelInst->setAnimSet("soldier_Soldier_Skeleton.animseta", "Soldier");
+                pSkelInst->setAnimSet("MichaelRun_hip.animseta", "MichealPackage");
 
                 PE::Handle hMeshInstance("MeshInstance", sizeof(MeshInstance));
                 MeshInstance *pMeshInstance = new(hMeshInstance)MeshInstance(*m_pContext, m_arena, hMeshInstance);
@@ -116,6 +116,7 @@ namespace CharacterControl{
                 // add skin to scene node
                 pRotateSN->addComponent(hSkeletonInstance);
 
+                /*
                 #if !APIABSTRACTION_D3D11
                 {
                     PE::Handle hMyGunMesh = PE::Handle("MeshInstance", sizeof(MeshInstance));
@@ -137,22 +138,38 @@ namespace CharacterControl{
                     pSkelInst->addComponent(hMyGunSN);
                 }
                 #endif
+                */
 
                 pMainSN->addComponent(hSN);
             }
-            
 
-            m_pContext->getGPUScreen()->ReleaseRenderContextOwnership(pEvt->m_threadOwnershipMask);
+            // now add game objects
 
-        #if 1
+            #if 1
             // add movement state machine to character
             PE::Handle ha6cMovementSM("A6cMovementSM", sizeof(A6cMovementSM));
             A6cMovementSM *pa6cMovementSM = new(ha6cMovementSM)A6cMovementSM(*m_pContext, m_arena, ha6cMovementSM);
             pa6cMovementSM->addDefaultComponents();
 
-            // add it to soldier NPC
+            // add it to A6c
             addComponent(ha6cMovementSM);
-        #endif
+            #endif
+
+            PE::Handle hA6cController("A6cController", sizeof(A6cController));
+            A6cController *pA6cController = new(hA6cController)A6cController(*m_pContext, m_arena, hA6cController, 0.05f, pEvt->m_pos, 0.05f, ha6cMovementSM);
+            pA6cController->addDefaultComponents();
+
+            // add the same scene node to tank controller
+            static int alllowedEventsToPropagate[] = { 0 }; // we will pass empty array as allowed events to propagate so that when we add
+            // scene node to the square controller, the square controller doesnt try to handle scene node's events
+            // because scene node handles events through scene graph, and is child of square controller just for referencing purposes
+            pA6cController->addComponent(hmainSN, &alllowedEventsToPropagate[0]);
+            
+            addComponent(hA6cController);
+
+            pA6cController->activate();
+
+            m_pContext->getGPUScreen()->ReleaseRenderContextOwnership(pEvt->m_threadOwnershipMask);
         }
 
         void A6character::addDefaultComponents()

@@ -71,7 +71,42 @@ namespace CharacterControl{
 
         void A6cMovementSM::do_UPDATE(PE::Events::Event *pEvt)
         {
-           
+            if (m_state == STANDING)
+            {
+                // no one has modified our state based on TARGET_REACHED callback
+                // this means we are not going anywhere right now
+                // so can send event to animation state machine to stop
+                {
+                    Events::A6cAnimSM_Event_STOP evt;
+
+                    A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                    pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                }
+            }
+            if (m_state == RUNNING_TO_TARGET)
+            {
+                // no one has modified our state based on TARGET_REACHED callback
+                // this means we are not going anywhere right now
+                // so can send event to animation state machine to stop
+                {
+                    Events::A6cAnimSM_Event_RUN evt;
+
+                    A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                    pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                }
+            }
+            if (m_state == WALKING_TO_TARGET)
+            {
+                // no one has modified our state based on TARGET_REACHED callback
+                // this means we are not going anywhere right now
+                // so can send event to animation state machine to stop
+                {
+                    Events::A6cAnimSM_Event_WALK evt;
+
+                    A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                    pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                }
+            }
         }
     }
 }
@@ -140,6 +175,14 @@ namespace CharacterControl {
             }
             else
             */
+            
+            if (Event_KEY_S_HELD::GetClassId() != pEvt->getClassId() && Event_KEY_W_HELD::GetClassId() != pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
+                Events::Event_A6C_Stop *stopEvt = new(h)Events::Event_A6C_Stop;
+
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+
             if (Event_KEY_S_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
@@ -217,7 +260,7 @@ namespace CharacterControl {
 
         A6cController::A6cController(PE::GameContext &context, PE::MemoryArena arena,
             PE::Handle myHandle, float speed, Vector3 spawnPos,
-            float networkPingInterval)
+            float networkPingInterval, PE::Handle hmovSM)
             : Component(context, arena, myHandle)
             , m_timeSpeed(speed)
             , m_time(0)
@@ -228,6 +271,7 @@ namespace CharacterControl {
             , m_overriden(false)
         {
             m_spawnPos = spawnPos;
+            hmovementSM = hmovSM;
         }
 
         void A6cController::addDefaultComponents()
@@ -237,13 +281,16 @@ namespace CharacterControl {
             PE_REGISTER_EVENT_HANDLER(PE::Events::Event_UPDATE, A6cController::do_UPDATE);
 
             // note: these event handlers will be registered only when one tank is activated as client tank (i.e. driven by client input on this machine)
-            PE_REGISTER_EVENT_HANDLER(Event_A6C_Throttle, A6cController::do_A6C_Throttle);
-            PE_REGISTER_EVENT_HANDLER(Event_A6C_Turn, A6cController::do_A6C_Turn);
+            //PE_REGISTER_EVENT_HANDLER(Event_A6C_Throttle, A6cController::do_A6C_Throttle);
+            //PE_REGISTER_EVENT_HANDLER(Event_A6C_Turn, A6cController::do_A6C_Turn);
 
         }
 
         void A6cController::do_A6C_Throttle(PE::Events::Event *pEvt)
         {
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::RUNNING_TO_TARGET;
+
             Event_A6C_Throttle *pRealEvent = (Event_A6C_Throttle *)(pEvt);
 
             PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
@@ -278,7 +325,14 @@ namespace CharacterControl {
 
         }
 
+        void A6cController::do_A6C_Stop(PE::Events::Event *pEvt)
+        {
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::STANDING;
+        }
+
         void A6cController::do_UPDATE(PE::Events::Event *pEvt)
+
         {
             PE::Events::Event_UPDATE *pRealEvt = (PE::Events::Event_UPDATE *)(pEvt);
 
@@ -384,6 +438,7 @@ namespace CharacterControl {
             // another way to do this would be to only hass one tank controller, and have it grab one of tank scene nodes when activated
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Throttle, A6cController::do_A6C_Throttle);
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Turn, A6cController::do_A6C_Turn);
+            PE_REGISTER_EVENT_HANDLER(Event_A6C_Stop, A6cController::do_A6C_Stop);
 
             PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
             if (!hFisrtSN.isValid())
@@ -407,6 +462,9 @@ namespace CharacterControl {
             
             //disable tank controls
             m_pContext->get<CharacterControlContext>()->getTankGameControls()->setEnabled(false);
+
+            //enable A6C controls
+            m_pContext->get<CharacterControlContext>()->getA6cControls()->setEnabled(true);
         }
     }
 }

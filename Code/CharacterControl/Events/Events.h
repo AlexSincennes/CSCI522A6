@@ -117,6 +117,15 @@ struct Event_A6C_Turn : public PE::Events::Event {
     Vector3 m_relativeRotate;
 };
 
+struct Event_A6C_Stop : public PE::Events::Event {
+    PE_DECLARE_CLASS(Event_A6C_Stop);
+
+    Event_A6C_Stop(){}
+    virtual ~Event_A6C_Stop(){}
+
+    Vector3 m_relativeMove;
+};
+
 }; // namespace Events
 }; // namespace CharacterControl
 

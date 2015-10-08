@@ -227,7 +227,7 @@ PE_IMPLEMENT_CLASS1(Event_A6C_Throttle, Event);
 
 PE_IMPLEMENT_CLASS1(Event_A6C_Turn, Event);
 
-
+PE_IMPLEMENT_CLASS1(Event_A6C_Stop, Event);
 };
 };
 

@@ -45,12 +45,19 @@ namespace CharacterControl{
 
             enum AnimId
             {
+                /*
                 NONE = -1,
                 STAND = 20,
                 WALK = 5,
                 RUN = 18,
                 STAND_AIM = 1,
                 STAND_SHOOT = 16,
+                */
+                NONE = -1,
+                STAND = 2,
+                WALK = 1,
+                RUN = 0,
+                SHOOT = 3
             };
 
             A6cAnimationSM(PE::GameContext &context, PE::MemoryArena arena, PE::Handle hMyself);
@@ -66,6 +73,8 @@ namespace CharacterControl{
 
 
             AnimId m_curId;
+
+            PE::Handle hSkeletonInstance;
         };
 
     };

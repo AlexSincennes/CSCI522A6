@@ -136,7 +136,7 @@ namespace CharacterControl {
 
             A6cController(PE::GameContext &context, PE::MemoryArena arena,
                 PE::Handle myHandle, float speed,
-                Vector3 spawnPos, float networkPingInterval); // constructor
+                Vector3 spawnPos, float networkPingInterval, PE::Handle hmovSM); // constructor
 
             virtual void addDefaultComponents(); // adds default children and event handlers
 
@@ -150,6 +150,8 @@ namespace CharacterControl {
             PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Turn);
             virtual void do_A6C_Turn(PE::Events::Event *pEvt);
 
+            PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Stop);
+            virtual void do_A6C_Stop(PE::Events::Event *pEvt);
 
             void overrideTransform(Matrix4x4 &t);
             void activate();
@@ -164,7 +166,7 @@ namespace CharacterControl {
             bool m_active;
             bool m_overriden;
             Matrix4x4 m_transformOverride;
-
+            PE::Handle hmovementSM;
         };
     }; // namespace Components
 }; // namespace CharacterControl

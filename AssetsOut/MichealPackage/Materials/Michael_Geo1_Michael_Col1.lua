@@ -16,7 +16,7 @@ args['textures']={
 {'SPECULAR', 'michael_diff.dds'},
 {'NORMAL', 'michael_diff.dds'},
 {'GLOW', 'michael_diff.dds'},
-} -- end textures
+}  -- end textures
 --notes overrides
 
 --notes end

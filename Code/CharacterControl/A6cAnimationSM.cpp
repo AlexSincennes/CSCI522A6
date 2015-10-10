@@ -16,6 +16,8 @@ namespace CharacterControl{
         PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_WALK, Event);
 
         PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_RUN, Event);
+
+		PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_Shoot, Event);
     }
     namespace Components{
 
@@ -33,6 +35,7 @@ namespace CharacterControl{
             PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_STOP, A6cAnimationSM::do_A6cAnimSM_Event_STOP);
             PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_WALK, A6cAnimationSM::do_A6cAnimSM_Event_WALK);
             PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_RUN, A6cAnimationSM::do_A6cAnimSM_Event_RUN);
+			PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_Shoot, A6cAnimationSM::do_A6cAnimSM_Event_Shoot);
         }
 
         void A6cAnimationSM::do_A6cAnimSM_Event_STOP(PE::Events::Event *pEvt)
@@ -70,6 +73,16 @@ namespace CharacterControl{
             }
         }
 
+		 void A6cAnimationSM::do_A6cAnimSM_Event_Shoot(PE::Events::Event *pEvt)
+        {
+            if (m_curId != A6cAnimationSM::SHOOT)
+            {
+                m_curId = A6cAnimationSM::SHOOT;
+                setAnimation(0, A6cAnimationSM::SHOOT,
+                    0, 0, 1, 1,
+                    PE::LOOPING);
+            }
+        }
 
     }
 }

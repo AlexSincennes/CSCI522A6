@@ -8,7 +8,7 @@ t["callerScript"] = '''
 function fillMetaInfoTable(args) -- the script fromat requires existance of this function
 
 -- user modifed data
-args['myScript']="MichaelNPC.lua"
+args['myScript']="MichealNPC.lua"
 args['myScriptPackage']="MichealPackage"
 
 args['skinName'] = "Michael_Geo1.mesha"

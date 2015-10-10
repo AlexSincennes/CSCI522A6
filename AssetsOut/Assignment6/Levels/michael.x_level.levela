@@ -2,7 +2,7 @@ LevelLoader.CreateGameObject("PEObject32_TImrod",-0.99386, -0.0, 0.110643, 0.0, 
 
 LevelLoader.CreateGameObject("PEObject12_pPlane1",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -8.326546, 0.0, -4.034357, 1.0, 'Michael.x_PEObject12_pPlan.lua', 'Assignment6',0x81a8b1c0, 0x1c5111e0, 0xa309001b, 0x213b583a)
 
-LevelLoader.CreateGameObject("PEObject52_nazi_rep",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, 0.0, 0.0, -0.0, 1.0, 'Michael.x_PEObject52_nazi_.lua', 'Assignment6',0x0c888b80, 0x6bc611e5, 0xa4aed07e, 0x35ac8216)
+LevelLoader.CreateGameObject("PEObject53_nazi_rep",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, 0.0, 0.0, -0.0, 1.0, 'Michael.x_PEObject53_nazi_.lua', 'Assignment6',0x433db940, 0x6f7a11e5, 0x88aad07e, 0x35ac8216)
 
 LevelLoader.CreateGameObject("PEObject28_pPlane1",1.0, 0.0, -0.0, 0.0, 0.0, 1.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0, -2500.0, 0.0, -4.034357, 1.0, 'Michael.x_PEObject28_pPlan.lua', 'Assignment6',0x102ebd70, 0x1c6811e0, 0x8cad001b, 0x213b583a)
 

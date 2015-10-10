@@ -107,6 +107,16 @@ namespace CharacterControl{
                     pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
                 }
             }
+
+			if (m_state == SHOOTING)
+			{				
+				{
+					Events::A6cAnimSM_Event_Shoot evt;
+
+					A6character *pA6C = getFirstParentByTypePtr<A6character>();
+					pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+				}
+			}
         }
     }
 }
@@ -229,6 +239,16 @@ namespace CharacterControl {
                 rotateCameraEvt->m_relativeRotate = relativeRotate * Debug_Rotate_Speed * m_frameTime;
                 m_pQueueManager->add(h, QT_GENERAL);
             }
+
+			else if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId())
+            {
+                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
+                Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
+
+                m_pQueueManager->add(h, QT_GENERAL); 
+            }
+
+
             /*
             else if (Event_KEY_DOWN_HELD::GetClassId() == pEvt->getClassId())
             {
@@ -325,12 +345,39 @@ namespace CharacterControl {
 
         }
 
-        void A6cController::do_A6C_Stop(PE::Events::Event *pEvt)
-        {
-            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
-            pMovSM->m_state = A6cMovementSM::STANDING;
-        }
+		void A6cController::do_A6C_Stop(PE::Events::Event *pEvt)
+		{
+			Event_A6C_Stop *pRealEvent = (Event_A6C_Stop *)(pEvt);
 
+			PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
+			if (!hFisrtSN.isValid())
+			{
+				assert(!"wrong setup. must have scene node referenced");
+				return;
+			}
+
+			SceneNode *pFirstSN = hFisrtSN.getObject<SceneNode>();
+
+			//pcam->m_base.turnUp(pRealEvent->m_relativeRotate.getY());
+		//	pFirstSN->m_base.turnLeft(-pRealEvent->m_relativeRotate.getX());
+
+		}
+
+
+        void A6cController::do_A6C_Shoot(PE::Events::Event *pEvt)
+        {
+			Event_A6C_Shoot *pRealEvent = (Event_A6C_Shoot *)(pEvt);
+
+			PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
+			if (!hFisrtSN.isValid())
+			{
+				assert(!"wrong setup. must have scene node referenced");
+				return;
+			}
+
+			SceneNode *pFirstSN = hFisrtSN.getObject<SceneNode>();
+        }
+		
         void A6cController::do_UPDATE(PE::Events::Event *pEvt)
 
         {
@@ -438,7 +485,9 @@ namespace CharacterControl {
             // another way to do this would be to only hass one tank controller, and have it grab one of tank scene nodes when activated
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Throttle, A6cController::do_A6C_Throttle);
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Turn, A6cController::do_A6C_Turn);
+			PE_REGISTER_EVENT_HANDLER(Event_A6C_Shoot, A6cController::do_A6C_Shoot);
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Stop, A6cController::do_A6C_Stop);
+			
 
             PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
             if (!hFisrtSN.isValid())

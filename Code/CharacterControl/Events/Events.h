@@ -118,13 +118,24 @@ struct Event_A6C_Turn : public PE::Events::Event {
 };
 
 struct Event_A6C_Stop : public PE::Events::Event {
-    PE_DECLARE_CLASS(Event_A6C_Stop);
+	PE_DECLARE_CLASS(Event_A6C_Stop);
 
-    Event_A6C_Stop(){}
-    virtual ~Event_A6C_Stop(){}
+	Event_A6C_Stop(){}
+	virtual ~Event_A6C_Stop(){}
 
-    Vector3 m_relativeMove;
+	Vector3 m_relativeMove;
 };
+
+struct Event_A6C_Shoot : public PE::Events::Event {
+	PE_DECLARE_CLASS(Event_A6C_Shoot);
+
+	Event_A6C_Shoot(){}
+	virtual ~Event_A6C_Shoot(){}
+
+	Vector3 m_relativeRotate;
+};
+
+
 
 }; // namespace Events
 }; // namespace CharacterControl

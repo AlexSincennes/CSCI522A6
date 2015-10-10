@@ -49,6 +49,7 @@ namespace CharacterControl{
                 STANDING,
                 RUNNING_TO_TARGET,
                 WALKING_TO_TARGET,
+				SHOOTING
             };
 
 
@@ -152,6 +153,9 @@ namespace CharacterControl {
 
             PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Stop);
             virtual void do_A6C_Stop(PE::Events::Event *pEvt);
+
+			PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Shoot);
+			virtual void do_A6C_Shoot(PE::Events::Event *pEvt);
 
             void overrideTransform(Matrix4x4 &t);
             void activate();

@@ -101,9 +101,13 @@ namespace CharacterControl{
                     hA6cAnimSM);
                 pSkelInst->addDefaultComponents();
 
-                pSkelInst->initFromFiles("MichaelStand_hip.skela", "MichealPackage", pEvt->m_threadOwnershipMask);
+                pSkelInst->initFromFiles("StandIdle_hip.skela", "MichealPackage", pEvt->m_threadOwnershipMask);
+
+			//	pSkelInst->setAnimSet("StandIdle_hip.animseta", "MichealPackage");
 
                 pSkelInst->setAnimSet("MichaelRun_hip.animseta", "MichealPackage");
+
+				pSkelInst->setAnimSet("MichaelShoot_hip.animseta", "MichealPackage");
 
                 PE::Handle hMeshInstance("MeshInstance", sizeof(MeshInstance));
                 MeshInstance *pMeshInstance = new(hMeshInstance)MeshInstance(*m_pContext, m_arena, hMeshInstance);

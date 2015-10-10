@@ -2,16 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Characters">
-      <UniqueIdentifier>{5C79CF1F-F627-6D46-89AC-34DFD85BE847}</UniqueIdentifier>
+      <UniqueIdentifier>{262090BE-0D3B-C348-B0C7-4403F858C30C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Client">
-      <UniqueIdentifier>{74A52852-077B-674D-8629-4580E2C4C607}</UniqueIdentifier>
+      <UniqueIdentifier>{A2617C80-B02D-724C-ABC8-167BB6257BC2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Events">
-      <UniqueIdentifier>{BA5FA4E4-F23A-4F40-B7F8-6ECD3D1D20A3}</UniqueIdentifier>
+      <UniqueIdentifier>{505611E5-1629-D641-B5C8-00024C1984D0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tank">
-      <UniqueIdentifier>{CB2DD77D-36D3-1A4E-A95D-0AB8F1B22AC2}</UniqueIdentifier>
+      <UniqueIdentifier>{0D366610-0249-CE4C-823D-76642D0D874F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

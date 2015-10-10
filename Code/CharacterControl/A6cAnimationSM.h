@@ -35,6 +35,13 @@ namespace CharacterControl{
         };
 
         // todo add events for shooting (sent by weapons state machine
+
+		struct A6cAnimSM_Event_Shoot : public PE::Events::Event {
+            PE_DECLARE_CLASS(A6cAnimSM_Event_Shoot);
+
+            A6cAnimSM_Event_Shoot() {}
+        };
+
     };
 
     namespace Components {
@@ -70,6 +77,8 @@ namespace CharacterControl{
                 virtual void do_A6cAnimSM_Event_WALK(PE::Events::Event *pEvt);
             PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6cAnimSM_Event_RUN)
                 virtual void do_A6cAnimSM_Event_RUN(PE::Events::Event *pEvt);
+			PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6cAnimSM_Event_Shoot)
+				virtual void do_A6cAnimSM_Event_Shoot(PE::Events::Event *pEvt);
 
 
             AnimId m_curId;

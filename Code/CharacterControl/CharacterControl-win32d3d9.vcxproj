@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{21B53FDC-7777-1D4F-B271-85AD6C4002EC}</ProjectGuid>
+    <ProjectGuid>{6DA368ED-65BA-1246-9905-98570EF2EE1C}</ProjectGuid>
     <RootNamespace>CharacterControl-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -205,13 +205,13 @@ copy /Y "C:/Program Files (x86)/Windows Kits/8.0\bin\x86\d3dcompiler_46.dll" "$(
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lua_dist\lua_dist-win32d3d9.vcxproj">
-      <Project>{3CC3962E-E375-9E41-8617-720E41BA8CE9}</Project>
+      <Project>{3E9BDF54-7C06-3A4A-8E21-BDE6A16A0BE1}</Project>
     </ProjectReference>
     <ProjectReference Include="..\luasocket_dist\luasocket_dist-win32d3d9.vcxproj">
-      <Project>{051EB254-BACF-0B42-BBCB-EF6FA0BEF64B}</Project>
+      <Project>{1C8D758E-7FD6-8141-B219-0071F29137D9}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PrimeEngine\PrimeEngine-win32d3d9.vcxproj">
-      <Project>{3A119B50-AD88-134E-AE34-9828D0D21FD5}</Project>
+      <Project>{BA5C9C38-46B4-AE4B-8E7C-55F689045E5B}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

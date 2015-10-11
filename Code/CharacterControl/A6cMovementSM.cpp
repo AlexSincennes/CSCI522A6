@@ -186,7 +186,7 @@ namespace CharacterControl {
             else
             */
             
-            if (Event_KEY_S_HELD::GetClassId() != pEvt->getClassId() && Event_KEY_W_HELD::GetClassId() != pEvt->getClassId()) {
+            if (Event_KEY_K_HELD::GetClassId() == pEvt->getClassId()) {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
                 Events::Event_A6C_Stop *stopEvt = new(h)Events::Event_A6C_Stop;
 
@@ -345,23 +345,10 @@ namespace CharacterControl {
 
         }
 
-		void A6cController::do_A6C_Stop(PE::Events::Event *pEvt)
-		{
-			Event_A6C_Stop *pRealEvent = (Event_A6C_Stop *)(pEvt);
-
-			PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
-			if (!hFisrtSN.isValid())
-			{
-				assert(!"wrong setup. must have scene node referenced");
-				return;
-			}
-
-			SceneNode *pFirstSN = hFisrtSN.getObject<SceneNode>();
-
-			//pcam->m_base.turnUp(pRealEvent->m_relativeRotate.getY());
-		//	pFirstSN->m_base.turnLeft(-pRealEvent->m_relativeRotate.getX());
-
-		}
+        void A6cController::do_A6C_Stop(PE::Events::Event *pEvt) {
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::STANDING;
+        }
 
 
         void A6cController::do_A6C_Shoot(PE::Events::Event *pEvt)

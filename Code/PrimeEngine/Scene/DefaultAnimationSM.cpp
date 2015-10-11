@@ -613,6 +613,14 @@ AnimationSlot *DefaultAnimationSM::setAnimation(
 	AnimSetBufferGPU *pAnimSetBufferGPU = pSkelInstance->m_hAnimationSetGPUs[animationSetIndex].getObject<AnimSetBufferGPU>();
 	AnimationSetCPU *pAnimSet = pAnimSetBufferGPU->m_hAnimationSetCPU.getObject<AnimationSetCPU>();
 	AnimationCPU &anim = pAnimSet->m_animations[(animationIndex + m_debugAnimIdOffset)];
+
+    // if shooting of michael character
+    if (strcmp(pSkelCPU->m_name, "StandIdle_hip.skela") == 0 && animationIndex == 4) {
+        AnimationSlot slot(animationSetIndex, (animationIndex + m_debugAnimIdOffset), 0, (PrimitiveTypes::Float32)(anim.m_frames.m_size - 1), 0, 69, ACTIVE | additionalFlags /*| PARTIAL_BODY_ANIMATION | NOTIFY_ON_ANIMATION_END*/, weight);
+        setSlot(goodSlot, slot);
+        return &m_animSlots[goodSlot];
+    }
+
 	AnimationSlot slot(animationSetIndex, (animationIndex + m_debugAnimIdOffset), 0, (PrimitiveTypes::Float32)(anim.m_frames.m_size-1), anim.m_startJoint, anim.m_endJoint, ACTIVE | additionalFlags /*| PARTIAL_BODY_ANIMATION | NOTIFY_ON_ANIMATION_END*/, weight);
 	setSlot(goodSlot, slot);
 	return &m_animSlots[goodSlot];

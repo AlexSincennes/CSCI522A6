@@ -229,3 +229,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.vcxproj
+Code/CharacterControl/CharacterControl-win32d3d9.vcxproj
+*.vcxproj
+*.vcxproj

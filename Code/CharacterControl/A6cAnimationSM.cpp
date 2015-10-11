@@ -69,7 +69,7 @@ namespace CharacterControl{
                 m_curId = A6cAnimationSM::RUN;
                 setAnimation(0, A6cAnimationSM::RUN,
                     0, 0, 1, 1,
-                    PE::LOOPING);
+                    PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
             }
         }
 
@@ -80,7 +80,7 @@ namespace CharacterControl{
                 m_curId = A6cAnimationSM::SHOOT;
                 setAnimation(0, A6cAnimationSM::SHOOT,
                     0, 0, 1, 1,
-                    PE::LOOPING);
+                    PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
             }
         }
 

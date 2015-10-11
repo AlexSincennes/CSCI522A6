@@ -2,553 +2,556 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="APIAbstraction">
-      <UniqueIdentifier>{24870C44-2C4F-4C4A-94AA-93FF9050B57A}</UniqueIdentifier>
+      <UniqueIdentifier>{2042184D-486C-DC43-B37C-787C74C27D8F}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX11">
-      <UniqueIdentifier>{939176C4-A2FE-294E-8D53-3B6701656DA9}</UniqueIdentifier>
+      <UniqueIdentifier>{5D6D7447-9C95-C64B-8D32-D74335894C61}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX11\D3D11_GPUBuffers">
-      <UniqueIdentifier>{24A264D9-5F75-C841-BD28-5932079CF5B7}</UniqueIdentifier>
+      <UniqueIdentifier>{456315AC-CCFB-9C4B-9719-8426DB802950}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX9">
-      <UniqueIdentifier>{721D8BAA-DE61-B444-9BB4-084DEC0C24DC}</UniqueIdentifier>
+      <UniqueIdentifier>{E27E2F7A-A285-4244-93BA-2E3F1FF6A206}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX9\D3D9_GPUBuffers">
-      <UniqueIdentifier>{472681F1-058B-DA4C-A7FA-EA44C42F66E4}</UniqueIdentifier>
+      <UniqueIdentifier>{717125B1-F3B7-BC45-8156-17B3D9ED2694}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX9\DX9_KeyboardMouse">
-      <UniqueIdentifier>{EF46C3BA-11BF-9448-9BD3-B93B9487D784}</UniqueIdentifier>
+      <UniqueIdentifier>{E9833CDB-EB32-0C4E-BF6F-635D0F2A1D20}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\DirectX9\DX9_XInput">
-      <UniqueIdentifier>{49C60DE8-20B6-8F42-A9D1-D791BC9A971D}</UniqueIdentifier>
+      <UniqueIdentifier>{A5A17706-419A-C54F-96B9-20BE9E3BF59C}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\Effect">
-      <UniqueIdentifier>{EC75EA71-AB73-B04A-874D-6FEC1F22FF19}</UniqueIdentifier>
+      <UniqueIdentifier>{B76133C4-1ED2-4E41-8869-DC6C1BB4AE8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\GPUBuffers">
-      <UniqueIdentifier>{38F85798-06E8-3B4A-A164-8CB73E7E56D9}</UniqueIdentifier>
+      <UniqueIdentifier>{9755BEF3-14BD-8145-9D14-5387261C7000}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\GPUMaterial">
-      <UniqueIdentifier>{CA787C2C-F419-A241-BE70-7B4C1CB13618}</UniqueIdentifier>
+      <UniqueIdentifier>{2608EC6F-7EA3-B640-BB8B-9369813DFBD5}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\Input">
-      <UniqueIdentifier>{1B82DAEC-300D-4143-98C3-A7E7B1A77CAE}</UniqueIdentifier>
+      <UniqueIdentifier>{21ECA973-F2D5-A643-BFCE-B0FC9EED743C}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\OGL">
-      <UniqueIdentifier>{FE10AD09-7FEC-6643-9DE1-A887AD46D07C}</UniqueIdentifier>
+      <UniqueIdentifier>{83E21333-22B1-FB43-95B5-31E9EA09907D}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\OGL\OGL_GPUBuffers">
-      <UniqueIdentifier>{5C9DA9EF-102A-D041-9E1A-890FCA5DFEBF}</UniqueIdentifier>
+      <UniqueIdentifier>{4DD73349-A420-604E-A525-E0F193AB0719}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\Texture">
-      <UniqueIdentifier>{A6CB6E8C-240D-F64E-8DD9-33EFC6043C09}</UniqueIdentifier>
+      <UniqueIdentifier>{1E56881F-3A95-F340-9CBA-C3BBCF8C97C8}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\Threading">
-      <UniqueIdentifier>{7082B517-B378-554B-8EDF-49DD5B99537E}</UniqueIdentifier>
+      <UniqueIdentifier>{86963C3D-B3C9-9945-B6CB-C83D291559A3}</UniqueIdentifier>
     </Filter>
     <Filter Include="APIAbstraction\Timer">
-      <UniqueIdentifier>{55762006-C863-6B4F-9FCA-7530029390C4}</UniqueIdentifier>
+      <UniqueIdentifier>{9FA921B4-68AD-5D43-AEA8-FF5E3BF2E299}</UniqueIdentifier>
     </Filter>
     <Filter Include="Application">
-      <UniqueIdentifier>{65B78349-2FFE-C149-A7C7-3E3A83857D73}</UniqueIdentifier>
+      <UniqueIdentifier>{6027DDA3-F0D4-4745-A3E7-86B92F8F9CEC}</UniqueIdentifier>
     </Filter>
     <Filter Include="Events">
-      <UniqueIdentifier>{F4E1DEE6-DD02-EA42-9E7A-0830FBEF6F30}</UniqueIdentifier>
+      <UniqueIdentifier>{CA2B9C52-4BFA-9540-B90E-64F7CB999373}</UniqueIdentifier>
     </Filter>
     <Filter Include="FileSystem">
-      <UniqueIdentifier>{2E5382F9-D610-6248-B033-E0B0303A3E9C}</UniqueIdentifier>
+      <UniqueIdentifier>{4629AA29-E3A4-244E-BF04-B66CF7A2B128}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game">
-      <UniqueIdentifier>{8884A4BC-CCB7-B145-92B5-444B5C723B25}</UniqueIdentifier>
+      <UniqueIdentifier>{7D1DBF51-AF6B-8F4C-A28B-0FF82EA9ED7F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Client">
-      <UniqueIdentifier>{FC866CAE-555C-C24B-B70E-20428CD51789}</UniqueIdentifier>
+      <UniqueIdentifier>{7414C24A-2C81-FC4E-BFF8-3AB39F39F536}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Common">
-      <UniqueIdentifier>{1C6FFD96-F262-7248-B3F5-4C22096ABD8A}</UniqueIdentifier>
+      <UniqueIdentifier>{2D87058D-A612-3148-8870-3640AEAA93D5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Game\Server">
-      <UniqueIdentifier>{796922F0-4099-8044-A222-64D4FC74AB6D}</UniqueIdentifier>
+      <UniqueIdentifier>{5AAD545F-2350-E447-BB23-1379B1AD601C}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObjectModel">
-      <UniqueIdentifier>{6359783D-B61F-6C4D-B805-04EBC9EB3427}</UniqueIdentifier>
+      <UniqueIdentifier>{9FEDDDEE-646B-2543-A6CD-98B6887799F5}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameObjectModel\DefaultGameControls">
-      <UniqueIdentifier>{F5CAD06C-ECF5-9F46-AF88-D46AA7A3F8C5}</UniqueIdentifier>
+      <UniqueIdentifier>{40DE3058-1FB4-7F4F-8E9E-0098BBDCE0DB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry">
-      <UniqueIdentifier>{400AAED7-7618-AC48-B935-7007908E291E}</UniqueIdentifier>
+      <UniqueIdentifier>{0C44C92E-5FD1-494E-B189-06F9A644A90F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\IndexBufferCPU">
-      <UniqueIdentifier>{CAC5C3AB-20B6-854F-B3BC-C8317E416024}</UniqueIdentifier>
+      <UniqueIdentifier>{950FDAEE-8405-2243-82BF-4E584ACFBE7B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\MaterialCPU">
-      <UniqueIdentifier>{0F4BF1B3-E341-E64D-9857-992DC8D6389A}</UniqueIdentifier>
+      <UniqueIdentifier>{D977D664-3FFC-3641-83E0-0B0DBEEF66F5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\MeshCPU">
-      <UniqueIdentifier>{8594CBFB-5928-174C-9275-0787BD9F7DB7}</UniqueIdentifier>
+      <UniqueIdentifier>{120F63EC-029E-404F-BC8F-EC0B644E4D5F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\NormalBufferCPU">
-      <UniqueIdentifier>{E652C955-5FC5-434D-A337-83E348F7AF69}</UniqueIdentifier>
+      <UniqueIdentifier>{737CE3D5-B032-EB4C-97FC-37CE4F44037B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\ParticleSystemCPU">
-      <UniqueIdentifier>{B9050851-A028-294B-9B16-C1FD2744F889}</UniqueIdentifier>
+      <UniqueIdentifier>{817C56BB-0C95-264C-8D76-A70673BF043A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\PositionBufferCPU">
-      <UniqueIdentifier>{34198AE6-4AA5-3A41-AD21-71F2DD47CE76}</UniqueIdentifier>
+      <UniqueIdentifier>{1488E543-995B-8745-9577-A02C50395A4A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\SkeletonCPU">
-      <UniqueIdentifier>{75B77BA3-6BB1-A642-B929-2BF1EE8D2E25}</UniqueIdentifier>
+      <UniqueIdentifier>{E6C171D3-3A89-EF43-AF10-C621E1B04FD1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\TangentBufferCPU">
-      <UniqueIdentifier>{9676207F-EDEB-5143-BE61-A860B803F271}</UniqueIdentifier>
+      <UniqueIdentifier>{1F42D855-9AF5-804B-9EBE-5C3AAAD0104C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Geometry\TexCoordBufferCPU">
-      <UniqueIdentifier>{F8DD6E77-AEF4-1F4A-96EA-2292D60E1997}</UniqueIdentifier>
+      <UniqueIdentifier>{BB9CE398-FCFC-5141-9626-FA73DA69CA4A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logging">
-      <UniqueIdentifier>{06469146-3370-C040-8080-7455B2446442}</UniqueIdentifier>
+      <UniqueIdentifier>{1DF96031-B246-3B4E-801C-BAA578A1A463}</UniqueIdentifier>
     </Filter>
     <Filter Include="Lua">
-      <UniqueIdentifier>{A56D1C60-8C7C-9F44-8746-091FF48D5E8F}</UniqueIdentifier>
+      <UniqueIdentifier>{81E0E287-66F0-3A46-8608-951C68F81FCE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Lua\Client">
-      <UniqueIdentifier>{7D70923F-48DC-154F-BCE8-7C8DB4CC39BA}</UniqueIdentifier>
+      <UniqueIdentifier>{87CC9A3F-1170-4B4C-91E2-BE38266451C6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Lua\EventGlue">
-      <UniqueIdentifier>{E06E0F7D-3B5F-8A41-81F1-8070F7F6A644}</UniqueIdentifier>
+      <UniqueIdentifier>{751BACD7-F5CB-6848-BEA5-4D4789F17B03}</UniqueIdentifier>
     </Filter>
     <Filter Include="Lua\Server">
-      <UniqueIdentifier>{42606AF1-7E94-A046-89CC-F471C783408A}</UniqueIdentifier>
+      <UniqueIdentifier>{4E2A60C8-871E-8F49-9EE3-BF6C21FA376C}</UniqueIdentifier>
     </Filter>
     <Filter Include="MainFunction">
-      <UniqueIdentifier>{44224B4B-24F9-5042-9D72-F0BE3669E7DE}</UniqueIdentifier>
+      <UniqueIdentifier>{F80DEC41-ED93-9E49-8053-EFEFF8FEE8B9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Math">
-      <UniqueIdentifier>{114C53DD-C197-F646-81B2-F17AF16F2121}</UniqueIdentifier>
+      <UniqueIdentifier>{3C003333-75C6-B549-AD77-C8B8938105BC}</UniqueIdentifier>
     </Filter>
     <Filter Include="MemoryManagement">
-      <UniqueIdentifier>{01273EC2-5D55-464B-84E5-6C7986EF71D8}</UniqueIdentifier>
+      <UniqueIdentifier>{B6A1FF03-90BC-5846-9CFC-6724E82A9A7A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Networking">
-      <UniqueIdentifier>{817B305F-EB70-B44B-9190-3B0D014F6BBF}</UniqueIdentifier>
+      <UniqueIdentifier>{E54C0CF9-18CA-4C46-94AD-882769261C80}</UniqueIdentifier>
     </Filter>
     <Filter Include="Networking\Client">
-      <UniqueIdentifier>{DDCADCFB-59D9-664A-96BC-656B6743A2F7}</UniqueIdentifier>
+      <UniqueIdentifier>{87CCF64D-B43B-4C43-A397-EFD1CB15219A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Networking\Server">
-      <UniqueIdentifier>{3297CBA8-E00C-8F45-9B73-5F99296BDA43}</UniqueIdentifier>
+      <UniqueIdentifier>{E19A5C64-D32A-114B-B8AD-76195ACBD1F4}</UniqueIdentifier>
     </Filter>
     <Filter Include="PrimitiveTypes">
-      <UniqueIdentifier>{36C86C7D-343B-5648-B41A-D99157CD844F}</UniqueIdentifier>
+      <UniqueIdentifier>{9F6B4343-E32B-3247-BEBE-48314E428069}</UniqueIdentifier>
     </Filter>
     <Filter Include="Profiling">
-      <UniqueIdentifier>{0D9C3E54-A998-7C4B-969D-ECA79DB2CA40}</UniqueIdentifier>
+      <UniqueIdentifier>{C2FDB9F3-EA88-D34B-BF7F-46E4FCAE3F9A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Render">
-      <UniqueIdentifier>{A112BC4D-49B7-6C40-9788-3BFF0F398297}</UniqueIdentifier>
+      <UniqueIdentifier>{343BA8A6-C3D6-CA4B-B3AF-E1B1E647CA50}</UniqueIdentifier>
     </Filter>
     <Filter Include="Render\ShaderActions">
-      <UniqueIdentifier>{8302BC0C-A4DC-604D-A007-70584961404C}</UniqueIdentifier>
+      <UniqueIdentifier>{3723ACE5-2AD9-E845-9D56-5BB9FC7BED4F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Scene">
-      <UniqueIdentifier>{B9F67D14-4B93-B548-AD33-8AB350712BA6}</UniqueIdentifier>
+      <UniqueIdentifier>{63A47DA7-9AC4-8649-ABF9-28A4DB1CE15F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Sound">
-      <UniqueIdentifier>{46E3C573-3A69-E046-8627-615AD2EA9B09}</UniqueIdentifier>
+      <UniqueIdentifier>{A3296B8B-D8A5-724E-B636-685F859F124C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utils">
-      <UniqueIdentifier>{7775E6FB-F93A-A149-BADE-03E4ED81D37A}</UniqueIdentifier>
+      <UniqueIdentifier>{4FA79387-05B3-2947-9519-2416EAB16060}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utils\Array">
-      <UniqueIdentifier>{A335DF88-C65C-BA47-B199-26CD70615CC2}</UniqueIdentifier>
+      <UniqueIdentifier>{AD849B0A-11AD-664B-98BD-36AAD13E680A}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut">
-      <UniqueIdentifier>{915D6D68-0896-EB4B-84F7-F044FF1B3186}</UniqueIdentifier>
+      <UniqueIdentifier>{0D8B671A-ABD2-C94B-8ACA-1CCBA6FC34E7}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Assignment6">
-      <UniqueIdentifier>{ACD918D7-830F-1F49-96F7-6886C539FD80}</UniqueIdentifier>
+      <UniqueIdentifier>{E735B35E-95A1-C24C-A0D3-45F9A2E07C00}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Assignment6\Levels">
-      <UniqueIdentifier>{C08E9E35-4F8B-5E4F-8578-686DA1289B2E}</UniqueIdentifier>
+      <UniqueIdentifier>{563D5BF0-2607-A74D-834F-73251FF3C012}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Basic">
-      <UniqueIdentifier>{4A3A1991-11A5-4642-9AE1-7F19A116BA7B}</UniqueIdentifier>
+      <UniqueIdentifier>{0747434F-51AE-1040-8884-05CCB63938C8}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Basic\Levels">
-      <UniqueIdentifier>{EACBACC7-E2FC-7C49-BB86-45DBEF19D13C}</UniqueIdentifier>
+      <UniqueIdentifier>{ADCC4E2D-0B1B-6A45-AF4D-4830B0BC6259}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl">
-      <UniqueIdentifier>{ED4289E7-FF65-0640-8B6D-C72051BDD300}</UniqueIdentifier>
+      <UniqueIdentifier>{31E7A840-57EE-BF4C-8CEE-41313EB0A860}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\AnimationNameSets">
-      <UniqueIdentifier>{EE0E4A95-9CA9-C74A-AFD3-B2FA50C9E27D}</UniqueIdentifier>
+      <UniqueIdentifier>{478E7210-8DD7-1A4C-A871-46B408246548}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\AnimationSets">
-      <UniqueIdentifier>{93B190A8-4496-5E46-BA85-54ECE52B9BE4}</UniqueIdentifier>
+      <UniqueIdentifier>{0A8C6380-873A-CA4B-B856-D25AB8EA32C7}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\AnimationSpeedSets">
-      <UniqueIdentifier>{5A87000A-1326-0645-8ECC-CE0CE2154BA9}</UniqueIdentifier>
+      <UniqueIdentifier>{9E983102-E58B-4149-9F6E-807A89E59027}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\GameObjectMetaScripts">
-      <UniqueIdentifier>{40FB7C7D-AE0C-AF45-A5AD-1263F7D4E024}</UniqueIdentifier>
+      <UniqueIdentifier>{831711B4-13C0-5B4F-BA59-7784F04BEB52}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\IndexBuffers">
-      <UniqueIdentifier>{337FB84F-F348-1D47-ABF0-F2B19F7CB390}</UniqueIdentifier>
+      <UniqueIdentifier>{79C90C2B-866E-8C4A-8AB1-3DEB933D3F63}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\Levels">
-      <UniqueIdentifier>{10040689-D43E-484B-BB54-00B7357BC097}</UniqueIdentifier>
+      <UniqueIdentifier>{B20C20D0-6A60-4642-92B8-F4910511A46E}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\Materials">
-      <UniqueIdentifier>{FE9FCAF3-975B-F642-8592-5E2CE5E1C665}</UniqueIdentifier>
+      <UniqueIdentifier>{8F347531-7310-CC45-A932-FCF84E605FD4}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\MaterialSets">
-      <UniqueIdentifier>{8B0B12FC-7F65-C84F-BF35-3632FA988B17}</UniqueIdentifier>
+      <UniqueIdentifier>{6A29D2D1-810B-354C-98E9-513EE6BADE6D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\Meshes">
-      <UniqueIdentifier>{9617C993-3C84-A649-88EB-935A2847D044}</UniqueIdentifier>
+      <UniqueIdentifier>{0F193E5C-3046-3D4E-8CFC-2EBA06A66501}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\NormalBuffers">
-      <UniqueIdentifier>{3468AE6A-5170-E841-A3EB-34BDDE2ADEDE}</UniqueIdentifier>
+      <UniqueIdentifier>{2C56B8FA-CE33-F944-9C5E-FA3B74B91994}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\PositionBuffers">
-      <UniqueIdentifier>{AE5A5E3A-E98C-AA46-8E32-9D8EDDA80B30}</UniqueIdentifier>
+      <UniqueIdentifier>{609E44B8-B2AB-D14C-B91C-606EF3522B1A}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\Scripts">
-      <UniqueIdentifier>{ECA1E163-1B7F-BD4D-8103-4F866A3B3DD6}</UniqueIdentifier>
+      <UniqueIdentifier>{27B10125-D9B6-9E40-ADE0-EFB17C1E2BAB}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\TangentBuffers">
-      <UniqueIdentifier>{7F4B072A-0465-1B47-AC98-80547166BDC4}</UniqueIdentifier>
+      <UniqueIdentifier>{69198D85-8E4E-F44D-963C-C1C5D24E809B}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\TexCoordBuffers">
-      <UniqueIdentifier>{D90A2679-FA9D-2644-B768-B791F8504A62}</UniqueIdentifier>
+      <UniqueIdentifier>{5A0CA4B7-766B-D54C-AD12-9C21657101B0}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\CharacterControl\Textures">
-      <UniqueIdentifier>{E152E40C-DEF5-1244-AD82-0292C2BFD5C5}</UniqueIdentifier>
+      <UniqueIdentifier>{9E94BAC5-6344-844F-88BE-286678870F09}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City">
-      <UniqueIdentifier>{E29E9276-E129-2C43-80A6-B7BFFA448433}</UniqueIdentifier>
+      <UniqueIdentifier>{5D3BB497-406B-F24A-A673-5D5F0F6C36FD}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\AnimationNameSets">
-      <UniqueIdentifier>{BC336B74-5F36-0749-AD26-C36440025052}</UniqueIdentifier>
+      <UniqueIdentifier>{7059CC66-DDF5-6944-BE3F-2591A970964C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\AnimationSets">
-      <UniqueIdentifier>{C53B8E5B-E5FD-0C40-BAC8-4A71DACE649F}</UniqueIdentifier>
+      <UniqueIdentifier>{18F26B98-D758-054C-9530-A34F35C0C23C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\AnimationSpeedSets">
-      <UniqueIdentifier>{80037971-A4E5-E346-80BC-07FB3F91ED3D}</UniqueIdentifier>
+      <UniqueIdentifier>{DFA0CB0C-5FF2-3B49-A759-554A52986D29}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\GameObjectMetaScripts">
-      <UniqueIdentifier>{12F1D9DA-ED65-EF46-B6AB-D27879B637DC}</UniqueIdentifier>
+      <UniqueIdentifier>{B0BB0A07-AB41-1240-9471-3C1A1C5563E0}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\IndexBuffers">
-      <UniqueIdentifier>{3CEF8E0B-4F9C-274D-86F6-0B6A60720E53}</UniqueIdentifier>
+      <UniqueIdentifier>{03F68E39-6134-4B4D-A0DF-78F959B934B9}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\Materials">
-      <UniqueIdentifier>{90576A50-2AAE-5C4F-B872-69EF7E12A298}</UniqueIdentifier>
+      <UniqueIdentifier>{ABCD7E82-5D0D-A14E-BBF4-656AFFCB9402}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\MaterialSets">
-      <UniqueIdentifier>{F92A837F-7AE6-C440-A8C1-23790C3DEC9C}</UniqueIdentifier>
+      <UniqueIdentifier>{CB526958-C97A-6F41-A5EA-2A1206F8760B}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\Meshes">
-      <UniqueIdentifier>{5D0D244F-13A6-1B44-BF07-CD2968390386}</UniqueIdentifier>
+      <UniqueIdentifier>{66D42DF2-4206-B846-B354-A9D1FD660CF4}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\NormalBuffers">
-      <UniqueIdentifier>{75197CCD-6677-0B41-A2CE-699A3082A546}</UniqueIdentifier>
+      <UniqueIdentifier>{C2F1E756-2C8E-7744-8C78-31546CC17DF5}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\PositionBuffers">
-      <UniqueIdentifier>{2AA8D73C-0433-684C-907B-BF069B59FEBB}</UniqueIdentifier>
+      <UniqueIdentifier>{BDA1661C-3D3B-C74E-BEEE-D859EE541119}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\Skeletons">
-      <UniqueIdentifier>{8DCCDF2C-C213-3543-B568-75DD001A2F4C}</UniqueIdentifier>
+      <UniqueIdentifier>{58AF4C5A-55D5-254C-9392-35AB0F59A3CC}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\Skins">
-      <UniqueIdentifier>{E2E92C94-1B74-D54C-8511-18DEB05169F6}</UniqueIdentifier>
+      <UniqueIdentifier>{5BB9643E-EDB4-6F42-AA1F-68CC4D5D4959}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\SkinWeights">
-      <UniqueIdentifier>{2DCFA28B-5C23-9940-851A-DD73DCC28EFE}</UniqueIdentifier>
+      <UniqueIdentifier>{464CC929-508D-CC49-BFB7-7B165E554DC1}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\TangentBuffers">
-      <UniqueIdentifier>{B0A0E04E-576E-5842-A3AE-69FDA24D961F}</UniqueIdentifier>
+      <UniqueIdentifier>{4B28A47D-4A8E-D54F-AFE6-9858361F24DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\TexCoordBuffers">
-      <UniqueIdentifier>{A71D57BE-CC91-584C-BB4B-4A03F092BDE2}</UniqueIdentifier>
+      <UniqueIdentifier>{04E99FE8-2E04-DB45-8344-41744964F690}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\City\Textures">
-      <UniqueIdentifier>{8F743F3A-871B-FF4D-BD60-84AC9F5E1815}</UniqueIdentifier>
+      <UniqueIdentifier>{7DC5FF4A-2BEB-FD48-9BEB-C2733FC82215}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis">
-      <UniqueIdentifier>{7687A61D-7519-3E4F-9162-F96D6A5FAE43}</UniqueIdentifier>
+      <UniqueIdentifier>{7BAEF5EF-F305-294A-BCB4-B7933CD3871F}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\IndexBuffers">
-      <UniqueIdentifier>{7C5BF648-19EC-BB4A-A9DF-C02D3F53758E}</UniqueIdentifier>
+      <UniqueIdentifier>{27D4AC08-4DD6-4646-B2B6-9ACDCD31C802}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\Materials">
-      <UniqueIdentifier>{676D0B96-7A92-D646-9C22-49344F4C55ED}</UniqueIdentifier>
+      <UniqueIdentifier>{93948729-4DA6-5944-B84F-51C9EC1307BC}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\MaterialSets">
-      <UniqueIdentifier>{6DE499B9-8F28-4341-BE35-A040DA31DC30}</UniqueIdentifier>
+      <UniqueIdentifier>{524D3055-BB09-9045-BED9-B69A136B9BC4}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\Meshes">
-      <UniqueIdentifier>{4DCF3DE5-B471-1945-8D68-3DD865C5E0AC}</UniqueIdentifier>
+      <UniqueIdentifier>{E86461E3-5068-D24A-909F-1BE96F45E0C3}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\NormalBuffers">
-      <UniqueIdentifier>{D9593CC4-3180-8547-986B-733BA87E2B3C}</UniqueIdentifier>
+      <UniqueIdentifier>{39ED7ED2-34B3-0C4B-829C-F628C295E5C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\PositionBuffers">
-      <UniqueIdentifier>{3FECAEE6-4F51-AC41-ACC5-D48D31433074}</UniqueIdentifier>
+      <UniqueIdentifier>{811FA782-AD62-D140-9A3B-59A3542B65EE}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\TangentBuffers">
-      <UniqueIdentifier>{311660BE-9CDB-8C45-86E5-B20BF09A476F}</UniqueIdentifier>
+      <UniqueIdentifier>{6FDFF019-3A29-A047-927D-DCB77ED8D8BE}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\TexCoordBuffers">
-      <UniqueIdentifier>{0363E510-7FEE-7646-8761-24210E40CA00}</UniqueIdentifier>
+      <UniqueIdentifier>{0C5040B6-4B13-3B44-9B1E-71679B112BE5}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\Textures">
-      <UniqueIdentifier>{7315294E-DDE4-CF48-AE85-3F0D194BE74E}</UniqueIdentifier>
+      <UniqueIdentifier>{FE61208C-DC42-6D47-9ACF-E9BF09A3A997}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\DebugAxis\VertexBuffers">
-      <UniqueIdentifier>{4D97505E-3220-CE48-B176-313F15FD2B6D}</UniqueIdentifier>
+      <UniqueIdentifier>{F42751F6-E7A0-8149-9366-89F77E72C5EC}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default">
-      <UniqueIdentifier>{1695C78F-0592-4648-8E60-39DCDECC45F7}</UniqueIdentifier>
+      <UniqueIdentifier>{8B74741B-C0DE-E949-8417-2FE41D0DCD09}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\AnimationNameSets">
-      <UniqueIdentifier>{5F8FE553-C801-D342-B6F3-D751A32CD026}</UniqueIdentifier>
+      <UniqueIdentifier>{13F272BB-8E64-FF47-8350-888D7682BD0C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\AnimationSets">
-      <UniqueIdentifier>{B8FA69CA-91C6-7A41-87DC-C5402E24E0F4}</UniqueIdentifier>
+      <UniqueIdentifier>{24E97B56-9D9E-DE45-99EB-B3D7679E1C13}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\AnimationSpeedSets">
-      <UniqueIdentifier>{A29DBF69-FB8B-324C-854C-DAA4E2222603}</UniqueIdentifier>
+      <UniqueIdentifier>{6C26DDCD-7AC8-4D47-9B07-46E427A58B94}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\GameObjectMetaScripts">
-      <UniqueIdentifier>{1202CC22-219C-CE4D-9860-0B66B1368CAB}</UniqueIdentifier>
+      <UniqueIdentifier>{3A8F8313-5DDB-5448-B2BF-C8227C5C5A64}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\GPUPrograms">
-      <UniqueIdentifier>{592E28E0-F4F8-624E-A1F2-75CDD207D64A}</UniqueIdentifier>
+      <UniqueIdentifier>{3AEEB61F-D285-C748-B448-370283936568}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\IndexBuffers">
-      <UniqueIdentifier>{352CBE8C-F6D4-FF47-978C-2B62A809D6E3}</UniqueIdentifier>
+      <UniqueIdentifier>{587F6E9D-B600-1C48-A878-E8C8139BEF19}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Materials">
-      <UniqueIdentifier>{1A89DD75-8ADF-454F-963D-D0CD772E166F}</UniqueIdentifier>
+      <UniqueIdentifier>{D4899B79-DDEF-8740-B2EE-00E292C79B3C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\MaterialSets">
-      <UniqueIdentifier>{D8EDBA58-AD53-1741-968D-4957C8BB091C}</UniqueIdentifier>
+      <UniqueIdentifier>{97F61D74-B7D1-9845-B2DA-A1484C276018}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Meshes">
-      <UniqueIdentifier>{AB7184C8-BEEF-C846-97BD-EEBE3FAB089C}</UniqueIdentifier>
+      <UniqueIdentifier>{CD00AFB2-1407-3F42-A571-D156618425BD}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\NormalBuffers">
-      <UniqueIdentifier>{F973CF5A-4FBE-0D4A-93B7-43DCFB6424F5}</UniqueIdentifier>
+      <UniqueIdentifier>{F49C0FB6-4A26-7B4C-82A9-226805CAC035}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\PositionBuffers">
-      <UniqueIdentifier>{1F9D562A-687A-FC45-8A36-EC40569E1947}</UniqueIdentifier>
+      <UniqueIdentifier>{D64E81E3-C8B1-7C49-BCD1-C8A391BD36F9}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Scripts">
-      <UniqueIdentifier>{7CF4D4EE-33E2-3F4E-8E9B-2353836D9560}</UniqueIdentifier>
+      <UniqueIdentifier>{8E209FD5-B3C6-9948-BD38-A9A46183EDC5}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Skeletons">
-      <UniqueIdentifier>{CEE7B974-16ED-5F4F-9D22-7C1BA5C5394E}</UniqueIdentifier>
+      <UniqueIdentifier>{D8303F26-E454-3E49-BE3D-3035DCAF4116}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Skins">
-      <UniqueIdentifier>{4DC63646-5D34-454F-8B89-42D9CCDB783C}</UniqueIdentifier>
+      <UniqueIdentifier>{9C969047-00CD-0245-93F6-5B115848379D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\SkinWeights">
-      <UniqueIdentifier>{789A3054-1CCB-4A41-9E1C-E17FB163DE93}</UniqueIdentifier>
+      <UniqueIdentifier>{C8798050-70DA-084C-9476-60455A690095}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\TangentBuffers">
-      <UniqueIdentifier>{F9F2BBCE-4D22-BF4E-9FB2-46A64A893F45}</UniqueIdentifier>
+      <UniqueIdentifier>{4D040E19-7275-FA45-B70D-04C98F896F61}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\TexCoordBuffers">
-      <UniqueIdentifier>{9D03E55C-6586-8E4E-957C-8015BA9765BC}</UniqueIdentifier>
+      <UniqueIdentifier>{8A7FC1E3-4F2A-144B-BF38-37839B36B5C8}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Default\Textures">
-      <UniqueIdentifier>{F847957F-1ACE-4449-B328-7EFC006F7066}</UniqueIdentifier>
+      <UniqueIdentifier>{FBE693C3-6F68-0C4C-A919-5D33789B5796}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate">
-      <UniqueIdentifier>{9F5F33AB-EB6A-DD40-8DCB-D1E900BA0C18}</UniqueIdentifier>
+      <UniqueIdentifier>{860EE72C-3830-664E-A330-ADAB6E07C6A7}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\IndexBuffers">
-      <UniqueIdentifier>{B27ADADF-8FAF-1943-AD5E-95390FC93A05}</UniqueIdentifier>
+      <UniqueIdentifier>{9F50853B-3480-2642-B019-B7A63F28B766}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\Materials">
-      <UniqueIdentifier>{26A99191-0B22-D645-9731-4680425F6F26}</UniqueIdentifier>
+      <UniqueIdentifier>{8F709E8A-691B-5645-A619-D48799C7E07D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\MaterialSets">
-      <UniqueIdentifier>{46F0F0E8-9478-AD4A-9286-FB51150392B4}</UniqueIdentifier>
+      <UniqueIdentifier>{1E611B3B-0D19-9A41-9E06-0A29CE85D033}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\Meshes">
-      <UniqueIdentifier>{36039BB7-ED5B-954B-9FB1-955879BD1FDE}</UniqueIdentifier>
+      <UniqueIdentifier>{2FE40C02-1F73-3B44-A0E3-2C9EC81CE266}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\NormalBuffers">
-      <UniqueIdentifier>{98E2F337-007F-E14D-B975-8B654502C5BF}</UniqueIdentifier>
+      <UniqueIdentifier>{AAEA3BEC-A989-6648-949F-4A4B82821BCC}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\PositionBuffers">
-      <UniqueIdentifier>{AAEBDF64-DA72-1841-8DA6-A89C5B5184FC}</UniqueIdentifier>
+      <UniqueIdentifier>{2D4DCE8A-93BA-7747-9490-3826DDEEAD97}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\TangentBuffers">
-      <UniqueIdentifier>{92050743-4508-E743-A51A-6EE29E9A31F2}</UniqueIdentifier>
+      <UniqueIdentifier>{803A8179-C56B-EE48-A402-9A603FA300F3}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\TexCoordBuffers">
-      <UniqueIdentifier>{9C180C8E-BA3E-F74C-BF08-2F58F2810553}</UniqueIdentifier>
+      <UniqueIdentifier>{B71F442E-85EA-5146-A421-B2676588193D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Frigate\Textures">
-      <UniqueIdentifier>{DAEAE8AA-B168-1B4C-B6CC-C74C6626875F}</UniqueIdentifier>
+      <UniqueIdentifier>{47DA74A7-2D7F-204D-A67D-F2F894FE507C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage">
-      <UniqueIdentifier>{E49153BD-77AF-6343-932C-0A5525A9646F}</UniqueIdentifier>
+      <UniqueIdentifier>{7A91A780-2B8C-604D-A3FE-F4DD1B90389F}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\AnimationSets">
-      <UniqueIdentifier>{E06A3765-D6B0-034A-9210-905FED18FEA4}</UniqueIdentifier>
+      <UniqueIdentifier>{8A8F9052-D07B-AF4A-A932-54470D7A521C}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\GameObjectMetaScripts">
-      <UniqueIdentifier>{18005141-2220-2844-836F-45482905DCDF}</UniqueIdentifier>
+      <UniqueIdentifier>{248410FD-0FCB-CD47-A6C5-F21E66583D8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\IndexBuffers">
-      <UniqueIdentifier>{2E2E490A-A394-B341-8A13-08AD254628B5}</UniqueIdentifier>
+      <UniqueIdentifier>{51BFFEDF-C5B0-2D46-927D-F8DB99C28F72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetsOut\MichealPackage\Levels">
+      <UniqueIdentifier>{5F304A59-1E89-084E-BCC9-CC07D53E8285}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\Materials">
-      <UniqueIdentifier>{3323742D-8188-BA48-9CF6-948B39E337BD}</UniqueIdentifier>
+      <UniqueIdentifier>{4D61B777-69E0-D041-9CC2-C5BC3645F016}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\MaterialSets">
-      <UniqueIdentifier>{24657576-F699-9C4D-BAFF-5CD5D1E5B067}</UniqueIdentifier>
+      <UniqueIdentifier>{063E3BC5-3A89-CD45-801C-71A74DE9BA0F}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\Meshes">
-      <UniqueIdentifier>{734AFF56-5D05-C449-BBF4-8A3BBB430A9E}</UniqueIdentifier>
+      <UniqueIdentifier>{D0BA54FC-D6CB-7845-861D-7A5491945E56}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\NormalBuffers">
-      <UniqueIdentifier>{B37A384D-F7F8-3F45-8BF5-C2B9B8D20CB7}</UniqueIdentifier>
+      <UniqueIdentifier>{D15A6965-9C3A-3543-AD1B-5A5E960360DA}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\PositionBuffers">
-      <UniqueIdentifier>{57219AFE-C892-B048-8BF3-8C4B571E062D}</UniqueIdentifier>
+      <UniqueIdentifier>{283EE98A-26E5-6B4A-B246-1DB949298189}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\Scripts">
-      <UniqueIdentifier>{9CB08CEF-C03B-8D48-8330-E3BB4D8F152E}</UniqueIdentifier>
+      <UniqueIdentifier>{73133CF8-FB68-CB47-94D3-FA7812F4D3D6}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\Skeletons">
-      <UniqueIdentifier>{63CC4407-A508-BF48-AE4F-328A43BFB4BB}</UniqueIdentifier>
+      <UniqueIdentifier>{0F8FA8F4-E57F-E64E-8326-0DAA1996D8FA}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\SkinWeights">
-      <UniqueIdentifier>{71D2991D-6485-CB4A-81E7-7781458978E0}</UniqueIdentifier>
+      <UniqueIdentifier>{E917AA01-ACBF-6E4F-95D7-4FBC79A140A2}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\TangentBuffers">
-      <UniqueIdentifier>{AA3B047E-A870-A34D-9C9D-F95A3CBBB899}</UniqueIdentifier>
+      <UniqueIdentifier>{72D7DBB9-9E4B-CD4A-B3F2-3CA0AD8E465A}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\TexCoordBuffers">
-      <UniqueIdentifier>{92CE6015-4B73-0A49-87F8-096355BAD74C}</UniqueIdentifier>
+      <UniqueIdentifier>{8CD49553-82C1-554E-8A87-18587F1F2EF6}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\MichealPackage\Textures">
-      <UniqueIdentifier>{8B7B2AF4-3440-6149-8B3B-CF2070403402}</UniqueIdentifier>
+      <UniqueIdentifier>{D0E37D91-850B-AF4F-BA76-7A2F64DC2B08}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE">
-      <UniqueIdentifier>{5057AC59-78A1-D54A-ADED-F1EED5BDDB41}</UniqueIdentifier>
+      <UniqueIdentifier>{06E65CFF-E466-D34E-9E82-CC395FA3A919}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\IndexBuffers">
-      <UniqueIdentifier>{B5A56216-B108-8842-9F7D-7F1B7761BC89}</UniqueIdentifier>
+      <UniqueIdentifier>{AF8A5665-1A50-764A-8A7A-94AC4F6289AC}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\Materials">
-      <UniqueIdentifier>{13EFC6EC-2A76-0B4D-AFA1-236B34906D8B}</UniqueIdentifier>
+      <UniqueIdentifier>{EC16F281-082E-EE47-B5A1-A83716073293}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\MaterialSets">
-      <UniqueIdentifier>{C6EBB62C-DABE-BD4D-AA0A-408B04EF4E0F}</UniqueIdentifier>
+      <UniqueIdentifier>{BD0145C1-E192-D24F-A922-2377B981E520}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\Meshes">
-      <UniqueIdentifier>{5800EE51-CE17-5645-8356-05614631FCD0}</UniqueIdentifier>
+      <UniqueIdentifier>{124BA260-05FD-EA49-A218-D37ECBB7A0DE}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\NormalBuffers">
-      <UniqueIdentifier>{029F97A4-B5D7-D041-A331-EA9CA6BD24DC}</UniqueIdentifier>
+      <UniqueIdentifier>{89B54E3F-94BA-DC47-8A66-A927A212BB93}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\TangentBuffers">
-      <UniqueIdentifier>{7785B1E6-753F-2545-89B7-EBC711450307}</UniqueIdentifier>
+      <UniqueIdentifier>{61025D58-02EC-D44F-9F33-8307929AAE51}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\TexCoordBuffers">
-      <UniqueIdentifier>{1D3A1395-E53B-CD43-A26C-9AD7746BBCA1}</UniqueIdentifier>
+      <UniqueIdentifier>{D288F14C-D3F8-B44F-BB73-7387D88D24DA}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\Textures">
-      <UniqueIdentifier>{F0E682A1-EB47-B94C-B82A-0221AC3ED325}</UniqueIdentifier>
+      <UniqueIdentifier>{6096AB70-52AD-4C48-8CC9-371BC79CA304}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\PE\VertexBuffers">
-      <UniqueIdentifier>{9CA82034-C47F-714F-9899-16E1DD6C7BC2}</UniqueIdentifier>
+      <UniqueIdentifier>{9ED3D065-585E-9748-831B-E6F476E31BA1}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier">
-      <UniqueIdentifier>{F395DD99-A721-ED4D-900E-807B5609376A}</UniqueIdentifier>
+      <UniqueIdentifier>{873C527C-9B7B-0644-9DA9-45C02424B925}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\AnimationSets">
-      <UniqueIdentifier>{19452B6B-A083-F046-BD2E-3A3A6CBCAD13}</UniqueIdentifier>
+      <UniqueIdentifier>{7A35BE34-62C0-474E-B0DE-DFDE1602BF89}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\IndexBuffers">
-      <UniqueIdentifier>{72893992-2567-E443-954D-7CADA9A8652C}</UniqueIdentifier>
+      <UniqueIdentifier>{75232CC1-75AC-054E-8616-3C5AC3AC4005}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\Materials">
-      <UniqueIdentifier>{F3B83B6A-3354-FD4C-9DC2-4877CE3A6451}</UniqueIdentifier>
+      <UniqueIdentifier>{EBD8F32F-E761-D24F-98DA-AC4C6C22D535}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\MaterialSets">
-      <UniqueIdentifier>{9509705E-432F-9B40-B352-843393B624DF}</UniqueIdentifier>
+      <UniqueIdentifier>{630CAAB8-28CE-4848-BF2F-CC3C99379A44}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\Meshes">
-      <UniqueIdentifier>{CBD13E96-9FFA-7547-AF4C-122C5705B823}</UniqueIdentifier>
+      <UniqueIdentifier>{CD028F93-C992-F145-BABE-B171520C3DD3}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\NormalBuffers">
-      <UniqueIdentifier>{A1C2DD64-7F91-D042-B26F-A91055E623C6}</UniqueIdentifier>
+      <UniqueIdentifier>{DA09F1C2-D2FB-4645-AD75-CCBC0792312D}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\PositionBuffers">
-      <UniqueIdentifier>{772A7164-CE37-3D4A-B3CA-36A04A8E63B1}</UniqueIdentifier>
+      <UniqueIdentifier>{2F3E5134-6477-CD4A-9BE5-42C7E38DE953}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\Skeletons">
-      <UniqueIdentifier>{E3A7330D-A87F-BD44-8202-175C4F8A4959}</UniqueIdentifier>
+      <UniqueIdentifier>{6933CC00-130C-F24B-BE00-3E53BEE120D6}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\SkinWeights">
-      <UniqueIdentifier>{80B82DB6-8E3B-684F-9827-EB289C180CFF}</UniqueIdentifier>
+      <UniqueIdentifier>{BED6ADDE-AE31-414C-8E40-F340D3048C17}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\TangentBuffers">
-      <UniqueIdentifier>{B74B1498-767A-1C40-B72C-53752AB42098}</UniqueIdentifier>
+      <UniqueIdentifier>{1C3A4300-E8E4-214C-A902-2CB261B3B425}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\TexCoordBuffers">
-      <UniqueIdentifier>{CE540AD9-4D5E-0249-9408-8D6F090EB059}</UniqueIdentifier>
+      <UniqueIdentifier>{1AE62386-B9B0-D546-A12A-33FC75F70D12}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Soldier\Textures">
-      <UniqueIdentifier>{9BCDF64D-5F3E-3446-BBDD-B5B4521298E6}</UniqueIdentifier>
+      <UniqueIdentifier>{8971373E-CD1A-384E-B59F-2C5262D6DB2F}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire">
-      <UniqueIdentifier>{1326CFB5-3073-5A4D-8817-DE0C327365C0}</UniqueIdentifier>
+      <UniqueIdentifier>{858512C8-46BA-FE48-AFB9-173321B1CB00}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\AnimationSets">
-      <UniqueIdentifier>{0348FB29-F56F-4647-8C97-BA4E3D0A03D8}</UniqueIdentifier>
+      <UniqueIdentifier>{D40A3751-68D5-D247-831C-31069250A157}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\IndexBuffers">
-      <UniqueIdentifier>{7FF33050-3C03-D841-9A82-516F8019B7BC}</UniqueIdentifier>
+      <UniqueIdentifier>{787DC26A-FEE5-CF4D-A2F3-D55428C08934}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\Materials">
-      <UniqueIdentifier>{F4B085FA-D834-9E46-A23B-06890BE4FE1B}</UniqueIdentifier>
+      <UniqueIdentifier>{5653D22E-A5BB-814A-9328-B6C57265CBF1}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\MaterialSets">
-      <UniqueIdentifier>{75C08347-516A-9348-BD69-BB4E35FF00E0}</UniqueIdentifier>
+      <UniqueIdentifier>{A04D478F-ED9E-8D4C-B313-0BD6D3399A7B}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\Meshes">
-      <UniqueIdentifier>{BD763F22-BED1-4848-AA41-20716454AC9D}</UniqueIdentifier>
+      <UniqueIdentifier>{E206252A-C1FE-BB4A-98BB-61A53DCAF737}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\NormalBuffers">
-      <UniqueIdentifier>{93810A46-7441-5544-8634-18D9CBA2F9F8}</UniqueIdentifier>
+      <UniqueIdentifier>{465BC1A3-84DA-6549-9432-844B9443D4B3}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\PositionBuffers">
-      <UniqueIdentifier>{F3F7C502-184A-834B-A708-60299F9D2475}</UniqueIdentifier>
+      <UniqueIdentifier>{B9D6F36E-9191-6F44-8A8B-2E879245DFC3}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\Skeletons">
-      <UniqueIdentifier>{684AF9CC-8115-3C49-A463-E8FD2CD9BE87}</UniqueIdentifier>
+      <UniqueIdentifier>{3B378149-C27D-3C47-B75E-8CA2D6C5A184}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\SkinWeights">
-      <UniqueIdentifier>{1D83ABBC-2E6B-7B44-9B8B-3E03A3A291FB}</UniqueIdentifier>
+      <UniqueIdentifier>{658C109E-C5CF-8D45-ADBE-F871CD393A08}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\TangentBuffers">
-      <UniqueIdentifier>{FD950517-D730-1247-BA2B-B88B8AAA31D9}</UniqueIdentifier>
+      <UniqueIdentifier>{0BAA39EF-A9FC-BD47-BEDA-104941C3BA96}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\TexCoordBuffers">
-      <UniqueIdentifier>{AD283FDA-B0C6-8844-BE90-AB28743B5B84}</UniqueIdentifier>
+      <UniqueIdentifier>{1B294F93-4635-C04B-8B34-FB092FA636F1}</UniqueIdentifier>
     </Filter>
     <Filter Include="AssetsOut\Vampire\Textures">
-      <UniqueIdentifier>{4CBA9B23-EEF6-FB4D-9618-2921EB28A6C2}</UniqueIdentifier>
+      <UniqueIdentifier>{A0EA9246-4227-1B44-A550-98C8F9119DC7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -635,6 +638,9 @@
       <Filter>AssetsOut\Assignment6\Levels</Filter>
     </None>
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject52_nazi_.lua">
+      <Filter>AssetsOut\Assignment6\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject53_nazi_.lua">
       <Filter>AssetsOut\Assignment6\Levels</Filter>
     </None>
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject6_Tstree.lua">
@@ -2017,6 +2023,9 @@
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelShoot_hip.animseta">
       <Filter>AssetsOut\MichealPackage\AnimationSets</Filter>
     </None>
+    <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelStand_hip.animseta">
+      <Filter>AssetsOut\MichealPackage\AnimationSets</Filter>
+    </None>
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelWalk_hip.animseta">
       <Filter>AssetsOut\MichealPackage\AnimationSets</Filter>
     </None>
@@ -2028,6 +2037,69 @@
     </None>
     <None Include="..\..\AssetsOut\MichealPackage\IndexBuffers\Michael_Geo1_index.bufa">
       <Filter>AssetsOut\MichealPackage\IndexBuffers</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\michaelscene.x_level.levela">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject11_polyS.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject12_pPlan.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject23_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject24_pPlan.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject25_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject26_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject27_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject28_pPlan.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject29_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject30_pPlan.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject31_trans.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject32_TImro.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject42_Tspot.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject47_nazi_.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject48_nazi_.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject50_nazi_.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject51_nazi_.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject6_Tstree.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject8_TspotR.lua">
+      <Filter>AssetsOut\MichealPackage\Levels</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Materials\Michael_Geo1_Michael_Col.lua">
+      <Filter>AssetsOut\MichealPackage\Materials</Filter>
     </None>
     <None Include="..\..\AssetsOut\MichealPackage\Materials\Michael_Geo1_Michael_Col1.lua">
       <Filter>AssetsOut\MichealPackage\Materials</Filter>
@@ -2049,6 +2121,9 @@
     </None>
     <None Include="..\..\AssetsOut\MichealPackage\Scripts\MichealNPC.lua">
       <Filter>AssetsOut\MichealPackage\Scripts</Filter>
+    </None>
+    <None Include="..\..\AssetsOut\MichealPackage\Skeletons\MichaelStand_hip.skela">
+      <Filter>AssetsOut\MichealPackage\Skeletons</Filter>
     </None>
     <None Include="..\..\AssetsOut\MichealPackage\Skeletons\StandIdle_hip.skela">
       <Filter>AssetsOut\MichealPackage\Skeletons</Filter>

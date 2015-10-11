@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BA5C9C38-46B4-AE4B-8E7C-55F689045E5B}</ProjectGuid>
+    <ProjectGuid>{1B3ABD58-B4F0-0D49-B76A-DC3F0472CFD1}</ProjectGuid>
     <RootNamespace>PrimeEngine-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -20,13 +20,11 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -61,8 +59,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -72,10 +69,10 @@
       <PreprocessorDefinitions>APIABSTRACTION_D3D9=1;PE_PLAT_API=0x0101;PE_PLAT_IS_WIN32=1;PE_API_IS_D3D9=1;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\lua_dist\src;..;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-    <Lib>
-      <OutputFile>$(OutDir)PrimeEngine-win32d3d9.lib</OutputFile>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Lib>
+  <Lib>
+    <OutputFile>$(OutDir)PrimeEngine-win32d3d9.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -91,21 +88,19 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat></DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>APIABSTRACTION_D3D9=1;PE_PLAT_API=0x0101;PE_PLAT_IS_WIN32=1;PE_API_IS_D3D9=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\lua_dist\src;..;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-    <Lib>
-      <OutputFile>$(OutDir)PrimeEngine-win32d3d9.lib</OutputFile>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Lib>
+  <Lib>
+    <OutputFile>$(OutDir)PrimeEngine-win32d3d9.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -637,6 +632,7 @@
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject42_Tspot.lua" />
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject50_nazi_.lua" />
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject52_nazi_.lua" />
+    <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject53_nazi_.lua" />
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject6_Tstree.lua" />
     <None Include="..\..\AssetsOut\Assignment6\Levels\Michael.x_PEObject8_TspotR.lua" />
     <None Include="..\..\AssetsOut\Basic\Levels\basic.x_level.levela" />
@@ -1097,10 +1093,32 @@
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelRifel_hip.animseta" />
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelRun_hip.animseta" />
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelShoot_hip.animseta" />
+    <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelStand_hip.animseta" />
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\MichaelWalk_hip.animseta" />
     <None Include="..\..\AssetsOut\MichealPackage\AnimationSets\StandIdle_hip.animseta" />
     <None Include="..\..\AssetsOut\MichealPackage\GameObjectMetaScripts\NPCMichael.py" />
     <None Include="..\..\AssetsOut\MichealPackage\IndexBuffers\Michael_Geo1_index.bufa" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\michaelscene.x_level.levela" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject11_polyS.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject12_pPlan.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject23_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject24_pPlan.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject25_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject26_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject27_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject28_pPlan.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject29_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject30_pPlan.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject31_trans.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject32_TImro.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject42_Tspot.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject47_nazi_.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject48_nazi_.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject50_nazi_.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject51_nazi_.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject6_Tstree.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Levels\MichaelScene.x_PEObject8_TspotR.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Materials\Michael_Geo1_Michael_Col.lua" />
     <None Include="..\..\AssetsOut\MichealPackage\Materials\Michael_Geo1_Michael_Col1.lua" />
     <None Include="..\..\AssetsOut\MichealPackage\Materials\Michael_Geo1_Michael_Col2.lua" />
     <None Include="..\..\AssetsOut\MichealPackage\MaterialSets\Michael_Geo1.mseta" />
@@ -1108,6 +1126,7 @@
     <None Include="..\..\AssetsOut\MichealPackage\NormalBuffers\Michael_Geo1_norm.bufa" />
     <None Include="..\..\AssetsOut\MichealPackage\PositionBuffers\Michael_Geo1_pos.bufa" />
     <None Include="..\..\AssetsOut\MichealPackage\Scripts\MichealNPC.lua" />
+    <None Include="..\..\AssetsOut\MichealPackage\Skeletons\MichaelStand_hip.skela" />
     <None Include="..\..\AssetsOut\MichealPackage\Skeletons\StandIdle_hip.skela" />
     <None Include="..\..\AssetsOut\MichealPackage\SkinWeights\Michael_Geo1.swghta" />
     <None Include="..\..\AssetsOut\MichealPackage\TangentBuffers\Michael_Geo1_tang.bufa" />

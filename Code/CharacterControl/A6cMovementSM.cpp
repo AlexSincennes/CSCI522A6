@@ -353,16 +353,8 @@ namespace CharacterControl {
 
         void A6cController::do_A6C_Shoot(PE::Events::Event *pEvt)
         {
-			Event_A6C_Shoot *pRealEvent = (Event_A6C_Shoot *)(pEvt);
-
-			PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
-			if (!hFisrtSN.isValid())
-			{
-				assert(!"wrong setup. must have scene node referenced");
-				return;
-			}
-
-			SceneNode *pFirstSN = hFisrtSN.getObject<SceneNode>();
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::SHOOTING;
         }
 		
         void A6cController::do_UPDATE(PE::Events::Event *pEvt)

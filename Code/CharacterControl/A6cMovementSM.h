@@ -87,6 +87,8 @@ namespace CharacterControl{
             // State
             Vector3 m_targetPostion;
             States m_state;
+            float m_time;
+            float m_time_aimdown;
         };
 
     };

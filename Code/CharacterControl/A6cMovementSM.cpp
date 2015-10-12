@@ -71,6 +71,15 @@ namespace CharacterControl{
 
         void A6cMovementSM::do_UPDATE(PE::Events::Event *pEvt)
         {
+            if (m_time_aimdown > 0 && m_time > m_time_aimdown + 0.90f) {
+                Events::A6cAnimSM_Event_Shoot_AimDown evt;
+
+                A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                m_time_aimdown = -1;
+            }
+
+
             if (m_state == STANDING)
             {
                 // no one has modified our state based on TARGET_REACHED callback
@@ -211,7 +220,6 @@ namespace CharacterControl {
             }
             else
             */
-
 
             if (Event_KEY_W_HELD::GetClassId() != pEvt->getClassId() && Event_KEY_SHIFT_HELD::GetClassId() != pEvt->getClassId()) {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
@@ -410,6 +418,7 @@ namespace CharacterControl {
         {
             A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
             pMovSM->m_state = A6cMovementSM::SHOOTING;
+            pMovSM->m_time_aimdown = m_time;
 			RootSceneNode::Instance()->BulletCount++;
 
         }
@@ -434,6 +443,9 @@ namespace CharacterControl {
             {
                 m_time += pRealEvt->m_frameTime;
                 m_networkPingTimer += pRealEvt->m_frameTime;
+
+                A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+                pMovSM->m_time = m_time;
             }
 
             PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();

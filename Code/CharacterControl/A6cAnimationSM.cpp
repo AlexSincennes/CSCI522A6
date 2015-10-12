@@ -103,8 +103,8 @@ namespace CharacterControl{
              if (m_curId != A6cAnimationSM::AIM_DOWN) {
                  m_curId = A6cAnimationSM::AIM_DOWN;
                  setAnimation(0, A6cAnimationSM::AIM_DOWN,
-                     0, 0, 1, 1,
-                     PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
+                     2, 2, 2, 2,
+                     PE::PARTIAL_BODY_ANIMATION);
              }
          }
 

@@ -80,6 +80,11 @@ struct Event_KEY_SPACE_HELD : public Event {
 
 };
 
+struct Event_KEY_SHIFT_HELD : public Event {
+    PE_DECLARE_CLASS(Event_KEY_SHIFT_HELD);
+    virtual ~Event_KEY_SHIFT_HELD() {}
+
+};
 
 }; // namespace Events
 }; // namespace PE

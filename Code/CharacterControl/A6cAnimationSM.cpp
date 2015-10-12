@@ -58,7 +58,7 @@ namespace CharacterControl{
                 m_curId = A6cAnimationSM::WALK;
                 setAnimation(0, A6cAnimationSM::WALK,
                     0, 0, 1, 1,
-                    PE::LOOPING);
+                    PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
             }
         }
 

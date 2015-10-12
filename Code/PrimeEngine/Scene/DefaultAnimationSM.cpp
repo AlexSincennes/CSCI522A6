@@ -322,7 +322,7 @@ void DefaultAnimationSM::do_CALCULATE_TRANSFORMATIONS(Events::Event *pEvt)
 		{
 			camPos = m_modelSpacePalette[m_modelSpacePalette.m_size-1].getPos();
 			RootSceneNode::Instance()->MichaelCam = camPos;
-			frontCam = m_modelSpacePalette[22].getPos();
+			frontCam = m_modelSpacePalette[3].getPos();
 			RootSceneNode::Instance()->MichaelFrontCam = frontCam;
 		}
 

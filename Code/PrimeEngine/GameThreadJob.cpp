@@ -327,7 +327,7 @@ int ClientGame::runGameFrame()
 						PEString::s_buf, true, false, false, false, 0,
 						Vector3(.0f, .05f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
 				}
-
+				
                 PE::IRenderer::checkForErrors("");
 
 				if (pServer->getLuaEnvironment()) // check if server context was initialized
@@ -352,7 +352,49 @@ int ClientGame::runGameFrame()
 						PEString::s_buf, true, false, false, false, 0,
 						Vector3(.0f, .075f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
 				}
+
 				
+				 PE::IRenderer::checkForErrors("");
+
+				//gameplay 
+				{
+					sprintf(PEString::s_buf, "Player Keys");
+					DebugRenderer::Instance()->createTextMesh(
+						PEString::s_buf, true, false, false, false, 0,
+						Vector3(.0f, .15f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
+				}
+				
+				 PE::IRenderer::checkForErrors("");
+
+				//gameplay 
+				{
+					sprintf(PEString::s_buf, "W-Move Forward   Space-Shoot");
+					DebugRenderer::Instance()->createTextMesh(
+						PEString::s_buf, true, false, false, false, 0,
+						Vector3(.0f, .2f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
+				}
+				
+				 PE::IRenderer::checkForErrors("");
+
+				//gameplay 
+				{
+					sprintf(PEString::s_buf, "Left Arrow, Right Arrow - Camera Movement");
+					DebugRenderer::Instance()->createTextMesh(
+						PEString::s_buf, true, false, false, false, 0,
+						Vector3(.0f, .25f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
+				}
+
+					 PE::IRenderer::checkForErrors("");
+
+				//gameplay 
+				{
+					int count = RootSceneNode::Instance()->BulletCount;
+					sprintf(PEString::s_buf, "Bullet Count    %d", count);
+					DebugRenderer::Instance()->createTextMesh(
+						PEString::s_buf, true, false, false, false, 0,
+						Vector3(.60f, .2f, 0), 1.0f, m_pContext->m_gameThreadThreadOwnershipMask);
+				}
+
 				//debug draw root and grid
 				DebugRenderer::Instance()->createRootLineMesh();// send event while the array is on the stack
 

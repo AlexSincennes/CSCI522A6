@@ -410,6 +410,7 @@ namespace CharacterControl {
         {
             A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
             pMovSM->m_state = A6cMovementSM::SHOOTING;
+			RootSceneNode::Instance()->BulletCount++;
 
         }
 
@@ -459,9 +460,9 @@ namespace CharacterControl {
 			if( pMovSM->m_state == A6cMovementSM::SHOOTING)
 			{
 				Vector3 fpos = RootSceneNode::Instance()->MichaelFrontCam;
-				 float xf = fpos.m_x-0.2f;
-				float yf = fpos.m_y + 0.5f;
-				float zf = fpos.m_z+0.7f;
+				 float xf = fpos.m_x+0.25f;
+				float yf = fpos.m_y + 0.25f;
+				float zf = fpos.m_z+0.37f;
 				 if (CameraSceneNode *pCamSN = pFirstSN->getFirstComponent<CameraSceneNode>())
 				{
 					pCamSN->m_base.setPos(Vector3(xf,yf,zf));

@@ -55,6 +55,7 @@ struct RootSceneNode : public SceneNode
 	static bool TitleIsCurrent() { return s_hCurInstance == s_hTitleInstance;}
 	Vector3 MichaelCam;
 	Vector3 MichaelFrontCam;
+	int BulletCount;
 	static void SetInstance(Handle h){s_hInstance = h;}
 	private:
 		static Handle s_hInstance;

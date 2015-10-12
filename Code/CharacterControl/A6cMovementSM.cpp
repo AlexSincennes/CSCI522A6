@@ -379,6 +379,7 @@ namespace CharacterControl {
         {
             A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
             pMovSM->m_state = A6cMovementSM::SHOOTING;
+
         }
 
         void A6cController::do_UPDATE(PE::Events::Event *pEvt)
@@ -400,16 +401,25 @@ namespace CharacterControl {
 
             SceneNode *pFirstSN = hFisrtSN.getObject<SceneNode>();
 
-            static float x = 0.0f;
-            static float y = 6.0f;
-            static float z = -11.0f;
+             Vector3 pos = RootSceneNode::Instance()->MichaelCam;
+			 float x = pos.m_x+1.5f;
+             float y = pos.m_y;
+            float z = pos.m_z-2.0f;
 
             // note we could have stored the camera reference in this object instead of searching for camera scene node
             if (CameraSceneNode *pCamSN = pFirstSN->getFirstComponent<CameraSceneNode>())
             {
-                pCamSN->m_base.setPos(Vector3(x, y, z));
+                pCamSN->m_base.setPos(Vector3(x,y,z));
             }
 
+			A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+			if( pMovSM->m_state == A6cMovementSM::SHOOTING)
+			{
+				 if (CameraSceneNode *pCamSN = pFirstSN->getFirstComponent<CameraSceneNode>())
+				{
+					pCamSN->m_base.setPos(Vector3(x-1.5f,y,z+2.0f));
+				}
+			}
 
             if (!m_overriden)
             {

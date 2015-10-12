@@ -21,7 +21,7 @@
 #include "PrimeEngine/Geometry/SkeletonCPU/SkeletonCPU.h"
 #include "PrimeEngine/APIAbstraction/GPUBuffers/AnimSetBufferGPU.h"
 // Sibling/Children includes
-
+#include "PrimeEngine/Scene/RootSceneNode.h"
 #include "SceneNode.h"
 #include "DrawList.h"
 #include "SH_DRAW.h"
@@ -315,6 +315,14 @@ void DefaultAnimationSM::do_CALCULATE_TRANSFORMATIONS(Events::Event *pEvt)
 		if (hp.isValid())
 		{	
 			tmp = hp.getObject<PE::Components::SceneNode>()->m_base;
+		}
+		Vector3 camPos;
+		int flag = strcmp(pSkelCPU->m_name, "StandIdle_hip.skela");
+		if(flag)
+		{
+			camPos = m_modelSpacePalette[5].getPos();
+			RootSceneNode::Instance()->MichaelCam = camPos;
+			
 		}
 
 		// finally add inverse transformation of vertices into local space of the bones (bind pose transformation)
@@ -621,9 +629,9 @@ AnimationSlot *DefaultAnimationSM::setAnimation(
         return &m_animSlots[goodSlot];
     }
 
-	AnimationSlot slot(animationSetIndex, (animationIndex + m_debugAnimIdOffset), 0, (PrimitiveTypes::Float32)(anim.m_frames.m_size-1), anim.m_startJoint, anim.m_endJoint, ACTIVE | additionalFlags /*| PARTIAL_BODY_ANIMATION | NOTIFY_ON_ANIMATION_END*/, weight);
-	setSlot(goodSlot, slot);
-	return &m_animSlots[goodSlot];
+    AnimationSlot slot(animationSetIndex, (animationIndex + m_debugAnimIdOffset), 0, (PrimitiveTypes::Float32)(anim.m_frames.m_size-1), anim.m_startJoint, anim.m_endJoint, ACTIVE | additionalFlags /*| PARTIAL_BODY_ANIMATION | NOTIFY_ON_ANIMATION_END*/, weight);
+    setSlot(goodSlot, slot);
+    return &m_animSlots[goodSlot];
 }
 
 void DefaultAnimationSM::setAnimations(

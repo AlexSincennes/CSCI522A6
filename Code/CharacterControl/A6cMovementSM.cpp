@@ -194,16 +194,17 @@ namespace CharacterControl {
             else
             */
 
-            if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId()) {
-                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
-                Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
-
-                m_pQueueManager->add(h, QT_GENERAL);
-            }
 
             if (Event_KEY_W_HELD::GetClassId() != pEvt->getClassId() && Event_KEY_SHIFT_HELD::GetClassId() != pEvt->getClassId()) {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
                 Events::Event_A6C_Stop *stopEvt = new(h)Events::Event_A6C_Stop;
+
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+
+            if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
+                Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
 
                 m_pQueueManager->add(h, QT_GENERAL);
             }

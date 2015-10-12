@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1B3ABD58-B4F0-0D49-B76A-DC3F0472CFD1}</ProjectGuid>
+    <ProjectGuid>{BB6EED76-9171-5742-9C1B-03318B4A3FF9}</ProjectGuid>
     <RootNamespace>PrimeEngine-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>

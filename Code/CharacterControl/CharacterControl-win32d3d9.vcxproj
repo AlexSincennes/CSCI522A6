@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5929BD76-7DCA-2D48-BB5F-802CF8160478}</ProjectGuid>
+    <ProjectGuid>{CF07D904-394C-4246-A004-097ADC3D72D8}</ProjectGuid>
     <RootNamespace>CharacterControl-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -194,13 +194,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\lua_dist\lua_dist-win32d3d9.vcxproj">
-      <Project>{2B4F991F-9471-5740-BB48-2E9CF5DEA2D5}</Project>
+      <Project>{85A2ACC0-62AA-8342-9EE0-2FB9B0AD0A06}</Project>
     </ProjectReference>
     <ProjectReference Include="..\luasocket_dist\luasocket_dist-win32d3d9.vcxproj">
-      <Project>{424F2609-40EF-6F4E-A6FA-DE9436E956C8}</Project>
+      <Project>{A9C98785-87F9-794F-86DD-5C05FA83D4AD}</Project>
     </ProjectReference>
     <ProjectReference Include="..\PrimeEngine\PrimeEngine-win32d3d9.vcxproj">
-      <Project>{1B3ABD58-B4F0-0D49-B76A-DC3F0472CFD1}</Project>
+      <Project>{BB6EED76-9171-5742-9C1B-03318B4A3FF9}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

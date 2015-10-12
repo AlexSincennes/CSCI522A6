@@ -320,7 +320,7 @@ void DefaultAnimationSM::do_CALCULATE_TRANSFORMATIONS(Events::Event *pEvt)
 		int flag = strcmp(pSkelCPU->m_name, "StandIdle_hip.skela");
 		if(flag)
 		{
-			camPos = m_modelSpacePalette[5].getPos();
+			camPos = m_modelSpacePalette[m_modelSpacePalette.m_size-1].getPos();
 			RootSceneNode::Instance()->MichaelCam = camPos;
 			
 		}

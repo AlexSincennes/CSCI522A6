@@ -60,15 +60,25 @@ namespace CharacterControl{
                 STAND_AIM = 1,
                 STAND_SHOOT = 16,
                 */
-                NONE = -1,
+               /* NONE = -1,
                 STAND = 7,
                 WALK = 6,
                 RUN = 0,
-                SHOOT = 4,
+                SHOOT = 1,
                 AIM_IDLE = 2,
-                AIM_DOWN = 1,
+                AIM_DOWN = 3,
                 HOLDING_RIFLE = 3,
-                STAND_POSE = 5
+                STAND_POSE = 5*/
+
+				NONE = -1,
+				RUN =0,
+				SHOOT = 1,
+				AIM_DOWN = 2,
+				AIM_IDLE = 3,
+				WALK = 4,
+				STAND = 5
+
+
             };
 
             A6cAnimationSM(PE::GameContext &context, PE::MemoryArena arena, PE::Handle hMyself);

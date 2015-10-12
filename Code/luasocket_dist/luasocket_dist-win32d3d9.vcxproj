@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1C8D758E-7FD6-8141-B219-0071F29137D9}</ProjectGuid>
+    <ProjectGuid>{A9C98785-87F9-794F-86DD-5C05FA83D4AD}</ProjectGuid>
     <RootNamespace>luasocket_dist-win32d3d9</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -20,13 +20,11 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v100</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -61,8 +59,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -73,10 +70,10 @@
       <PreprocessorDefinitions>APIABSTRACTION_D3D9=1;PE_PLAT_API=0x0101;PE_PLAT_IS_WIN32=1;PE_API_IS_D3D9=1;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\lua_dist\src;..;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-    <Lib>
-      <OutputFile>$(OutDir)luasocket_dist-win32d3d9.lib</OutputFile>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Lib>
+  <Lib>
+    <OutputFile>$(OutDir)luasocket_dist-win32d3d9.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -92,22 +89,20 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat></DebugInformationFormat>
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>APIABSTRACTION_D3D9=1;PE_PLAT_API=0x0101;PE_PLAT_IS_WIN32=1;PE_API_IS_D3D9=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\lua_dist\src;..;C:\Program Files (x86)\Windows Kits\8.0\Include\um;C:\Program Files (x86)\Windows Kits\8.0\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-    <Lib>
-      <OutputFile>$(OutDir)luasocket_dist-win32d3d9.lib</OutputFile>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Lib>
+  <Lib>
+    <OutputFile>$(OutDir)luasocket_dist-win32d3d9.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>

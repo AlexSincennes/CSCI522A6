@@ -107,7 +107,7 @@ namespace CharacterControl{
 
                 pSkelInst->setAnimSet("MichaelRun_hip.animseta", "MichealPackage");
 
-				pSkelInst->setAnimSet("MichaelShoot_hip.animseta", "MichealPackage");
+				//pSkelInst->setAnimSet("MichaelShoot_hip.animseta", "MichealPackage");
 
                 PE::Handle hMeshInstance("MeshInstance", sizeof(MeshInstance));
                 MeshInstance *pMeshInstance = new(hMeshInstance)MeshInstance(*m_pContext, m_arena, hMeshInstance);

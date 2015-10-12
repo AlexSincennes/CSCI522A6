@@ -231,6 +231,9 @@ PE_IMPLEMENT_CLASS1(Event_A6C_Stop, Event);
 
 PE_IMPLEMENT_CLASS1(Event_A6C_Shoot, Event);
 
+PE_IMPLEMENT_CLASS1(Event_A6C_Shoot_AimDown, Event);
+
+PE_IMPLEMENT_CLASS1(Event_A6C_Shoot_AimIdle, Event);
 
 };
 };

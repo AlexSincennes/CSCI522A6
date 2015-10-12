@@ -131,8 +131,20 @@ struct Event_A6C_Shoot : public PE::Events::Event {
 
 	Event_A6C_Shoot(){}
 	virtual ~Event_A6C_Shoot(){}
+};
 
-	Vector3 m_relativeRotate;
+struct Event_A6C_Shoot_AimDown : public PE::Events::Event {
+    PE_DECLARE_CLASS(Event_A6C_Shoot_AimDown);
+
+    Event_A6C_Shoot_AimDown() {}
+    virtual ~Event_A6C_Shoot_AimDown() {}
+};
+
+struct Event_A6C_Shoot_AimIdle : public PE::Events::Event {
+    PE_DECLARE_CLASS(Event_A6C_Shoot_AimIdle);
+
+    Event_A6C_Shoot_AimIdle() {}
+    virtual ~Event_A6C_Shoot_AimIdle() {}
 };
 
 

@@ -117,6 +117,24 @@ namespace CharacterControl{
 					pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
 				}
 			}
+
+            if (m_state == SHOOTING_AIM_DOWN) {
+                    {
+                        Events::A6cAnimSM_Event_Shoot_AimDown evt;
+
+                        A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                        pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                    }
+            }
+
+            if (m_state == SHOOTING_AIM_IDLE) {
+                    {
+                        Events::A6cAnimSM_Event_Shoot_AimIdle evt;
+
+                        A6character *pA6C = getFirstParentByTypePtr<A6character>();
+                        pA6C->getFirstComponent<PE::Components::SceneNode>()->handleEvent(&evt);
+                    }
+            }
         }
     }
 }
@@ -205,6 +223,19 @@ namespace CharacterControl {
             if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId()) {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
                 Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
+
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+            else if (Event_KEY_A_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot_AimIdle));
+                Events::Event_A6C_Shoot_AimIdle *stopEvt = new(h)Events::Event_A6C_Shoot_AimIdle;
+
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+
+            else if (Event_KEY_D_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot_AimDown));
+                Events::Event_A6C_Shoot_AimDown *stopEvt = new(h)Events::Event_A6C_Shoot_AimDown;
 
                 m_pQueueManager->add(h, QT_GENERAL);
             }
@@ -382,6 +413,18 @@ namespace CharacterControl {
 
         }
 
+        void A6cController::do_A6C_Shoot_AimDown(PE::Events::Event *pEvt) {
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::SHOOTING_AIM_DOWN;
+
+        }
+
+        void A6cController::do_A6C_Shoot_AimIdle(PE::Events::Event *pEvt) {
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+            pMovSM->m_state = A6cMovementSM::SHOOTING_AIM_IDLE;
+
+        }
+
         void A6cController::do_UPDATE(PE::Events::Event *pEvt)
         {
             PE::Events::Event_UPDATE *pRealEvt = (PE::Events::Event_UPDATE *)(pEvt);
@@ -485,6 +528,8 @@ namespace CharacterControl {
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Throttle, A6cController::do_A6C_Throttle);
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Turn, A6cController::do_A6C_Turn);
 			PE_REGISTER_EVENT_HANDLER(Event_A6C_Shoot, A6cController::do_A6C_Shoot);
+            PE_REGISTER_EVENT_HANDLER(Event_A6C_Shoot_AimDown, A6cController::do_A6C_Shoot_AimDown);
+            PE_REGISTER_EVENT_HANDLER(Event_A6C_Shoot_AimIdle, A6cController::do_A6C_Shoot_AimIdle);
             PE_REGISTER_EVENT_HANDLER(Event_A6C_Stop, A6cController::do_A6C_Stop);
 			
 

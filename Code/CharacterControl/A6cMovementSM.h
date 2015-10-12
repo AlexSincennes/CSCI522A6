@@ -49,7 +49,9 @@ namespace CharacterControl{
                 STANDING,
                 RUNNING_TO_TARGET,
                 WALKING_TO_TARGET,
-				SHOOTING
+				SHOOTING,
+                SHOOTING_AIM_DOWN,
+                SHOOTING_AIM_IDLE
             };
 
 
@@ -156,6 +158,12 @@ namespace CharacterControl {
 
 			PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Shoot);
 			virtual void do_A6C_Shoot(PE::Events::Event *pEvt);
+
+            PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Shoot_AimDown);
+            virtual void do_A6C_Shoot_AimDown(PE::Events::Event *pEvt);
+
+            PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6C_Shoot_AimIdle);
+            virtual void do_A6C_Shoot_AimIdle(PE::Events::Event *pEvt);
 
             void overrideTransform(Matrix4x4 &t);
             void activate();

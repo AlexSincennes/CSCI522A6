@@ -18,6 +18,10 @@ namespace CharacterControl{
         PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_RUN, Event);
 
 		PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_Shoot, Event);
+
+        PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_Shoot_AimIdle, Event);
+
+        PE_IMPLEMENT_CLASS1(A6cAnimSM_Event_Shoot_AimDown, Event);
     }
     namespace Components{
 
@@ -36,6 +40,8 @@ namespace CharacterControl{
             PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_WALK, A6cAnimationSM::do_A6cAnimSM_Event_WALK);
             PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_RUN, A6cAnimationSM::do_A6cAnimSM_Event_RUN);
 			PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_Shoot, A6cAnimationSM::do_A6cAnimSM_Event_Shoot);
+            PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_Shoot_AimIdle, A6cAnimationSM::do_A6cAnimSM_Event_Shoot_AimIdle);
+            PE_REGISTER_EVENT_HANDLER(Events::A6cAnimSM_Event_Shoot_AimDown, A6cAnimationSM::do_A6cAnimSM_Event_Shoot_AimDown);
         }
 
         void A6cAnimationSM::do_A6cAnimSM_Event_STOP(PE::Events::Event *pEvt)
@@ -83,6 +89,24 @@ namespace CharacterControl{
                     PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
             }
         }
+
+         void A6cAnimationSM::do_A6cAnimSM_Event_Shoot_AimIdle(PE::Events::Event *pEvt) {
+             if (m_curId != A6cAnimationSM::AIM_IDLE) {
+                 m_curId = A6cAnimationSM::AIM_IDLE;
+                 setAnimation(0, A6cAnimationSM::AIM_IDLE,
+                     0, 0, 1, 1,
+                     PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
+             }
+         }
+
+         void A6cAnimationSM::do_A6cAnimSM_Event_Shoot_AimDown(PE::Events::Event *pEvt) {
+             if (m_curId != A6cAnimationSM::AIM_DOWN) {
+                 m_curId = A6cAnimationSM::AIM_DOWN;
+                 setAnimation(0, A6cAnimationSM::AIM_DOWN,
+                     0, 0, 1, 1,
+                     PE::LOOPING | PE::PARTIAL_BODY_ANIMATION);
+             }
+         }
 
     }
 }

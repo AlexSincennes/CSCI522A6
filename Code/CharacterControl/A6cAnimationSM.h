@@ -42,6 +42,18 @@ namespace CharacterControl{
             A6cAnimSM_Event_Shoot() {}
         };
 
+        struct A6cAnimSM_Event_Shoot_AimIdle : public PE::Events::Event {
+            PE_DECLARE_CLASS(A6cAnimSM_Event_Shoot_AimIdle);
+
+            A6cAnimSM_Event_Shoot_AimIdle() {}
+        };
+
+        struct A6cAnimSM_Event_Shoot_AimDown : public PE::Events::Event {
+            PE_DECLARE_CLASS(A6cAnimSM_Event_Shoot_AimDown);
+
+            A6cAnimSM_Event_Shoot_AimDown() {}
+        };
+
     };
 
     namespace Components {
@@ -93,6 +105,10 @@ namespace CharacterControl{
                 virtual void do_A6cAnimSM_Event_RUN(PE::Events::Event *pEvt);
 			PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6cAnimSM_Event_Shoot)
 				virtual void do_A6cAnimSM_Event_Shoot(PE::Events::Event *pEvt);
+            PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6cAnimSM_Event_Shoot_AimDown)
+                virtual void do_A6cAnimSM_Event_Shoot_AimDown(PE::Events::Event *pEvt);
+            PE_DECLARE_IMPLEMENT_EVENT_HANDLER_WRAPPER(do_A6cAnimSM_Event_Shoot_AimIdle)
+                virtual void do_A6cAnimSM_Event_Shoot_AimIdle(PE::Events::Event *pEvt);
 
 
             AnimId m_curId;

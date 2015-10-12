@@ -230,15 +230,6 @@ namespace CharacterControl {
             flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
             m_pQueueManager->add(h, QT_GENERAL);
             }*/
-            else if(Event_KEY_W_HELD::GetClassId() == pEvt->getClassId())
-            {
-                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
-                Events::Event_A6C_Throttle *flyCameraEvt = new(h)Events::Event_A6C_Throttle;
-
-                Vector3 relativeMovement(0.0f, 0.0f, 0.5f);
-                flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
-                m_pQueueManager->add(h, QT_GENERAL);
-            }
             else if(Event_KEY_LEFT_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Event_A6C_Turn));
@@ -263,6 +254,14 @@ namespace CharacterControl {
                 Events::Event_A6C_Throttle *flyCameraEvt = new(h)Events::Event_A6C_Throttle;
 
                 Vector3 relativeMovement(0.0f, 0.0f, 1.0f);
+                flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+            else if (Event_KEY_W_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
+                Events::Event_A6C_Throttle *flyCameraEvt = new(h)Events::Event_A6C_Throttle;
+
+                Vector3 relativeMovement(0.0f, 0.0f, 0.5f);
                 flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
                 m_pQueueManager->add(h, QT_GENERAL);
             }
@@ -465,19 +464,6 @@ namespace CharacterControl {
             {
                 pFirstSN->m_base = m_transformOverride;
             }
-            /*
-            if (m_networkPingTimer > m_networkPingInterval)
-            {
-                // send client authoritative position event
-                CharacterControl::Events::Event_MoveTank_C_to_S evt(*m_pContext);
-                evt.m_transform = pFirstSN->m_base;
-
-                ClientNetworkManager *pNetworkManager = (ClientNetworkManager *)(m_pContext->getNetworkManager());
-                pNetworkManager->getNetworkContext().getEventManager()->scheduleEvent(&evt, m_pContext->getGameObjectManager(), true);
-
-                m_networkPingTimer = 0.0f;
-            }
-            */
         }
 
         void A6cController::overrideTransform(Matrix4x4 &t)

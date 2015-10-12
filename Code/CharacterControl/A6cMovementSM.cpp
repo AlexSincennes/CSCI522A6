@@ -153,6 +153,14 @@ namespace CharacterControl {
             // Process input events (XBOX360 buttons, triggers...)
             PE::Handle iqh = PE::Events::EventQueueManager::Instance()->getEventQueueHandle("input");
 
+            //if no input: stop event
+            if (iqh.getObject<PE::Events::EventQueue>()->empty()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
+                Events::Event_A6C_Stop *stopEvt = new(h)Events::Event_A6C_Stop;
+                m_pQueueManager = PE::Events::EventQueueManager::Instance();
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+
             // Process input event -> game event conversion
             while (!iqh.getObject<PE::Events::EventQueue>()->empty())
             {
@@ -185,14 +193,22 @@ namespace CharacterControl {
             }
             else
             */
-            
-            if (Event_KEY_K_HELD::GetClassId() == pEvt->getClassId()) {
+
+            if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
+                Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
+
+                m_pQueueManager->add(h, QT_GENERAL);
+            }
+
+            if (Event_KEY_W_HELD::GetClassId() != pEvt->getClassId() && Event_KEY_SHIFT_HELD::GetClassId() != pEvt->getClassId()) {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Stop));
                 Events::Event_A6C_Stop *stopEvt = new(h)Events::Event_A6C_Stop;
 
                 m_pQueueManager->add(h, QT_GENERAL);
             }
 
+            /*
             if (Event_KEY_S_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
@@ -202,6 +218,7 @@ namespace CharacterControl {
                 flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
                 m_pQueueManager->add(h, QT_GENERAL);
             }
+            */
             /*
             else if (Event_KEY_D_HELD::GetClassId() == pEvt->getClassId())
             {
@@ -212,16 +229,16 @@ namespace CharacterControl {
             flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
             m_pQueueManager->add(h, QT_GENERAL);
             }*/
-            else if (Event_KEY_W_HELD::GetClassId() == pEvt->getClassId())
+            else if(Event_KEY_W_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
                 Events::Event_A6C_Throttle *flyCameraEvt = new(h)Events::Event_A6C_Throttle;
 
-                Vector3 relativeMovement(0.0f, 0.0f, 1.0f);
+                Vector3 relativeMovement(0.0f, 0.0f, 0.5f);
                 flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
                 m_pQueueManager->add(h, QT_GENERAL);
             }
-            else if (Event_KEY_LEFT_HELD::GetClassId() == pEvt->getClassId())
+            else if(Event_KEY_LEFT_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Event_A6C_Turn));
                 Event_A6C_Turn *rotateCameraEvt = new(h)Event_A6C_Turn;
@@ -230,7 +247,7 @@ namespace CharacterControl {
                 rotateCameraEvt->m_relativeRotate = relativeRotate * Debug_Rotate_Speed * m_frameTime;
                 m_pQueueManager->add(h, QT_GENERAL);
             }
-            else if (Event_KEY_RIGHT_HELD::GetClassId() == pEvt->getClassId())
+            else if(Event_KEY_RIGHT_HELD::GetClassId() == pEvt->getClassId())
             {
                 PE::Handle h("EVENT", sizeof(Event_A6C_Turn));
                 Event_A6C_Turn *rotateCameraEvt = new(h)Event_A6C_Turn;
@@ -240,14 +257,14 @@ namespace CharacterControl {
                 m_pQueueManager->add(h, QT_GENERAL);
             }
 
-			else if (Event_KEY_SPACE_HELD::GetClassId() == pEvt->getClassId())
-            {
-                 PE::Handle h("EVENT", sizeof(Events::Event_A6C_Shoot));
-                Events::Event_A6C_Shoot *stopEvt = new(h)Events::Event_A6C_Shoot;
+            else if(Event_KEY_SHIFT_HELD::GetClassId() == pEvt->getClassId()) {
+                PE::Handle h("EVENT", sizeof(Events::Event_A6C_Throttle));
+                Events::Event_A6C_Throttle *flyCameraEvt = new(h)Events::Event_A6C_Throttle;
 
-                m_pQueueManager->add(h, QT_GENERAL); 
+                Vector3 relativeMovement(0.0f, 0.0f, 1.0f);
+                flyCameraEvt->m_relativeMove = relativeMovement * Debug_Fly_Speed * m_frameTime;
+                m_pQueueManager->add(h, QT_GENERAL);
             }
-
 
             /*
             else if (Event_KEY_DOWN_HELD::GetClassId() == pEvt->getClassId())
@@ -308,10 +325,17 @@ namespace CharacterControl {
 
         void A6cController::do_A6C_Throttle(PE::Events::Event *pEvt)
         {
-            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
-            pMovSM->m_state = A6cMovementSM::RUNNING_TO_TARGET;
-
             Event_A6C_Throttle *pRealEvent = (Event_A6C_Throttle *)(pEvt);
+
+            A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+
+            if (pRealEvent->m_relativeMove.length() > 0.1f)
+                    pMovSM->m_state = A6cMovementSM::RUNNING_TO_TARGET;
+            else
+                if (pMovSM->m_state == A6cMovementSM::RUNNING_TO_TARGET)
+                    return;
+                else
+                    pMovSM->m_state = A6cMovementSM::WALKING_TO_TARGET;
 
             PE::Handle hFisrtSN = getFirstComponentHandle<SceneNode>();
             if (!hFisrtSN.isValid())
@@ -356,9 +380,8 @@ namespace CharacterControl {
             A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
             pMovSM->m_state = A6cMovementSM::SHOOTING;
         }
-		
-        void A6cController::do_UPDATE(PE::Events::Event *pEvt)
 
+        void A6cController::do_UPDATE(PE::Events::Event *pEvt)
         {
             PE::Events::Event_UPDATE *pRealEvt = (PE::Events::Event_UPDATE *)(pEvt);
 

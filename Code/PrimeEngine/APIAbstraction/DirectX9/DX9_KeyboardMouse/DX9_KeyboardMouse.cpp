@@ -100,6 +100,11 @@ void DX9_KeyboardMouse::generateButtonEvents()
 			new (h)Event_KEY_SPACE_HELD;
 			m_pQueueManager->add(h, Events::QT_INPUT);
 		}
+        if (GetAsyncKeyState(VK_SHIFT) & 0x8000) {
+            Handle h("EVENT", sizeof(Event_KEY_SHIFT_HELD));
+            new (h)Event_KEY_SHIFT_HELD;
+            m_pQueueManager->add(h, Events::QT_INPUT);
+        }
 		if(GetAsyncKeyState(',') & 0x8000)
 		{
 			Handle h("EVENT", sizeof(Event_KEY_COMMA_HELD));

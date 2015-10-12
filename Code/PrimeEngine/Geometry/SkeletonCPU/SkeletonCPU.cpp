@@ -1,5 +1,6 @@
 #include "SkeletonCPU.h"
 #include "PrimeEngine/APIAbstraction/GPUBuffers/AnimSetBufferGPU.h"
+#define counter 100
 namespace PE {
 
 void SkeletonCPU::readJoint(JointCPU &dest, JointCPU *pParentJoint, FastJoint *fastJointParent, FastJoint *&fastJointSibling, FileReader &f, PrimitiveTypes::Int32 &jointsLeft, float positionFactor, bool isInWorldSpace)
@@ -176,6 +177,15 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 	PrimitiveTypes::UInt32 nBlend = 0;
 
 	bool hasPartial = false;
+
+	if(curIndex == 2)
+	{
+		if(Frames > counter-2)
+			Frames = 1;
+		else
+			Frames = Frames + 1;
+	}
+
 	for (PrimitiveTypes::UInt32 iSlot = 0; iSlot < slots.m_size; iSlot++)
 	{
 		AnimationSlot &curSlot = slots[iSlot];
@@ -300,6 +310,22 @@ void SkeletonCPU::prepareMatrixPalette(JointCPU &jnt,
 	Matrix4x4 curTransform = parentTransform * local;
 
 	res[curIndex] = curTransform;
+
+	//Add the code for additive 
+	if(curIndex == 2)
+	{
+		if(Frames < counter/2)
+		{
+		curTransform.turnUp(0.002f * (Frames % (counter/2)));
+		check = 0.002f * (Frames % (counter/2));
+		}
+		else 
+		{
+		curTransform.turnUp(check);
+		curTransform.turnDown(0.002f * (Frames % (counter/2)));
+		}
+	}
+	
 
 	for (PrimitiveTypes::UInt32 ij = 0; ij < jnt.m_subJoints.m_size; ij++)
 	{

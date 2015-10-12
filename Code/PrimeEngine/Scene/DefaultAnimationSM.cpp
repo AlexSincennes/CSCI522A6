@@ -316,13 +316,14 @@ void DefaultAnimationSM::do_CALCULATE_TRANSFORMATIONS(Events::Event *pEvt)
 		{	
 			tmp = hp.getObject<PE::Components::SceneNode>()->m_base;
 		}
-		Vector3 camPos;
+		Vector3 camPos, frontCam;
 		int flag = strcmp(pSkelCPU->m_name, "StandIdle_hip.skela");
 		if(flag)
 		{
 			camPos = m_modelSpacePalette[m_modelSpacePalette.m_size-1].getPos();
 			RootSceneNode::Instance()->MichaelCam = camPos;
-			
+			frontCam = m_modelSpacePalette[22].getPos();
+			RootSceneNode::Instance()->MichaelFrontCam = frontCam;
 		}
 
 		// finally add inverse transformation of vertices into local space of the bones (bind pose transformation)

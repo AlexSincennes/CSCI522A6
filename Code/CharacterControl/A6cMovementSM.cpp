@@ -455,15 +455,19 @@ namespace CharacterControl {
                 pCamSN->m_base.setPos(Vector3(x,y,z));
             }
 
-			/*A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
+			A6cMovementSM* pMovSM = hmovementSM.getObject<A6cMovementSM>();
 			if( pMovSM->m_state == A6cMovementSM::SHOOTING)
 			{
+				Vector3 fpos = RootSceneNode::Instance()->MichaelFrontCam;
+				 float xf = fpos.m_x-0.2f;
+				float yf = fpos.m_y + 0.5f;
+				float zf = fpos.m_z+0.7f;
 				 if (CameraSceneNode *pCamSN = pFirstSN->getFirstComponent<CameraSceneNode>())
 				{
-					pCamSN->m_base.setPos(Vector3(x-1.5f,y,z+2.0f));
+					pCamSN->m_base.setPos(Vector3(xf,yf,zf));
 				}
 			}
-			*/
+			
             if (!m_overriden)
             {
                 /*

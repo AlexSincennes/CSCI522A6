@@ -435,6 +435,9 @@ private:
 	JointCPU m_root;
 	Array<Matrix4x4> m_bindInverses;
 	PE::MemoryArena m_arena; PE::GameContext *m_pContext;
+
+	float check;
+	int Frames;
 };
 
 }; // namespace PE
